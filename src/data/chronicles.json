@@ -93,7 +93,7 @@
     }
   ],
   "chronicles_format": {
-    "content_structure": "array di stringhe: Testo del paragrafo"",
+    "content_structure": "array di stringhe: Testo del paragrafo",
     "target_words_per_chapter": "1500-4000",
     "style": "romanzo gotico/noir, narrativo, non frammentato, con dialoghi e descrizioni ambientali, senza meccaniche di gioco",
     "notes": [
