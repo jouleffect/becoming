@@ -1,0 +1,648 @@
+{
+  "campaign": {
+    "name": "Becoming – Campagna I: La Nuova Razza",
+    "version": "1.0",
+    "current_session": 2,
+    "started_at": null,
+    "status": "active",
+    "mode": "retroactive_save",
+    "notes": [
+      "Creato retroattivamente a partire dalla cronologia giocata prima dell'introduzione del sistema campaign.json.",
+      "La campagna è ancora nella fase iniziale di Inquietudine."
+    ]
+  },
+  "session": {
+    "current_chapter": "Capitolo II – Eco Diurne",
+    "current_scene": "The Black Finch",
+    "last_scene": "Ethan è seduto al tavolo del Black Finch davanti a Lydia Hale, che ha appena riferito il messaggio onirico di Mark: 'Ethan Crowley deve sapere.'",
+    "resume_from": "Ethan deve reagire alla frase di Lydia e decidere come proseguire l'indagine sulla scomparsa di Mark Hale."
+  },
+  "world_state": {
+    "supernatural_activity": "low",
+    "public_awareness": "low",
+    "faction_tension": "medium",
+    "becoming_level": "low",
+    "escalation_level": 1,
+    "escalation_name": "Inquietudine",
+    "notes": [
+      "Ravenfall è attraversata da sparizioni, sogni condivisi e simboli misteriosi.",
+      "Il sovrannaturale resta nascosto alla popolazione generale.",
+      "Le anomalie iniziano a concentrarsi intorno a Ethan Crowley."
+    ]
+  },
+  "locations": [
+    {
+      "id": "universita",
+      "discovered": true,
+      "discovery_order": 1,
+      "last_visit": "Capitolo I – Il Simbolo"
+    },
+    {
+      "id": "ethan-apartment",
+      "discovered": true,
+      "discovery_order": 2,
+      "last_visit": "Capitolo II – Eco Diurne"
+    },
+    {
+      "id": "cassian-house",
+      "discovered": true,
+      "discovery_order": 3,
+      "last_visit": "Capitolo II – Eco Diurne"
+    },
+    {
+      "id": "the-black-finch",
+      "discovered": true,
+      "discovery_order": 4,
+      "last_visit": "Capitolo II – Eco Diurne"
+    },
+    {
+      "id": "quartiere-vecchio",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null
+    },
+    {
+      "id": "porto",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null
+    },
+    {
+      "id": "black-finch-district",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null
+    },
+    {
+      "id": "distretto-industriale",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null
+    },
+    {
+      "id": "black-hollow",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null
+    },
+    {
+      "id": "saint-mourne",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null
+    },
+    {
+      "id": "ospedale-greyward",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null
+    },
+    {
+      "id": "catacombe",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null
+    }
+  ],
+  "players": [
+    {
+      "id": "ethan_crowley",
+      "name": "Ethan Crowley",
+      "profession": "Investigatore privato",
+      "location": "Ravenfall",
+      "race_public": "Umano",
+      "race_real": "Mezzosangue",
+      "becoming_stage": 0,
+      "humanity": 100,
+      "health": "debilitated",
+      "current_location": "The Black Finch",
+      "health_points": 5,
+      "stress": 2,
+      "attributes": {
+        "istinto": 5,
+        "volonta": 4,
+        "influenza": 2,
+        "anomalia": 3
+      },
+      "powers": [
+        {
+          "name": "Sesto Senso Sovrannaturale",
+          "status": "latent",
+          "notes": "Percepisce presenze, anomalie e reazioni legate al simbolo."
+        },
+        {
+          "name": "Sogni Condivisi",
+          "status": "latent",
+          "notes": "Sogna volti sconosciuti, luoghi non riconosciuti e una fame anomala."
+        }
+      ],
+      "talents": [
+        "Investigatore",
+        "Sensitivo",
+        "Sopravvissuto"
+      ],
+      "mutations": [],
+      "conditions": [
+        "insonnia",
+        "dolori alla testa durante manifestazioni del simbolo",
+        "fame onirica anomala"
+      ],
+      "equipment": [
+        {
+          "id": "ethan_pendant",
+          "name": "Ciondolo di Ethan",
+          "description": "Ciondolo portato fin dall'infanzia. Ha forma di mezzo cerchio e reca sul retro una versione incompleta del simbolo del libro.",
+          "status": "in_possession",
+          "importance": "high"
+        }
+      ],
+      "goals": [
+        "Scoprire la causa degli eventi anomali di Ravenfall",
+        "Capire perché il simbolo reagisce a lui",
+        "Scoprire cosa è accaduto a Mark Hale",
+        "Proteggere gli innocenti"
+      ],
+      "notes": [
+        "Non conosce la propria vera natura.",
+        "Ha scelto di non rispondere alla Presenza nell'Archivio.",
+        "È apparentemente il centro dell'attenzione di una forza sovrannaturale sconosciuta."
+      ]
+    },
+    {
+      "id": "cassian_everhart",
+      "name": "Cassian Everhart",
+      "race_public": "Umano",
+      "race_real": "Umano",
+      "becoming_stage": 0,
+      "humanity": 100,
+      "health": "healthy",
+      "current_location": "Casa di Cassian",
+      "powers": [],
+      "mutations": [],
+      "conditions": [
+        "ossessione crescente verso il simbolo e il mistero"
+      ],
+      "inventory": [
+        {
+          "id": "ancient_tome_grandfather",
+          "name": "Tomo antico del nonno di Cassian",
+          "description": "Volume contenente il simbolo sconosciuto che ha dato inizio all'indagine.",
+          "status": "under_study",
+          "importance": "high"
+        },
+        {
+          "id": "de_generatione_intermedia",
+          "name": "De Generatione Intermedia",
+          "subtitle": "Sulle stirpi che non dovevano esistere",
+          "description": "Volume trovato da Cassian. Contiene riferimenti a individui incompleti, stirpi intermedie e cambiamenti legati al sangue.",
+          "status": "under_study",
+          "importance": "high"
+        }
+      ],
+      "goals": [
+        "Studiare il simbolo",
+        "Comprendere il collegamento tra sogni, sparizioni e testi antichi",
+        "Proteggere Ethan e capire perché è coinvolto",
+        "Scoprire la vera natura dei cambiamenti di Ravenfall"
+      ],
+      "notes": [
+        "Ha trascorso la notte nell'appartamento di Ethan dopo gli eventi dell'Archivio.",
+        "È preoccupato dalla parola 'fame' usata da Ethan.",
+        "Sta studiando il libro e i collegamenti storici."
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ethan_crowley",
+      "target": "cassian_everhart",
+      "type": "amici",
+      "description": "Cassian è uno degli amici più vicini di Ethan e lo aiuta a interpretare ciò che sta accadendo.",
+      "known": true
+    },
+    {
+      "source": "lydia_hale",
+      "target": "mark_hale",
+      "type": "fratelli",
+      "description": "Lydia è la sorella di Mark.",
+      "known": true
+    },
+    {
+      "source": "ethan_crowley",
+      "target": "lydia_hale",
+      "type": "conoscenza recente",
+      "description": "Ethan ha incontrato Lydia dopo il messaggio lasciato da Mark.",
+      "known": true
+    },
+    {
+      "source": "mark_hale",
+      "target": "ethan_crowley",
+      "type": "messaggio criptico",
+      "description": "Mark ha indicato Ethan come qualcuno che deve sapere.",
+      "known": true
+    },
+    {
+      "source": "presence",
+      "target": "ethan_crowley",
+      "type": "legame oscuro",
+      "description": "Una presenza sconosciuta sembra connessa ai sogni e alla fame anomala di Ethan.",
+      "known": true
+    }
+  ],
+  "factions": [
+    {
+      "id": "vampires",
+      "name": "Casate Vampiriche",
+      "status": "active",
+      "attitude": "unknown",
+      "current_goal": "Osservare il fenomeno dei Mezzosangue e le anomalie di Ravenfall",
+      "known_by_players": false,
+      "recent_activity": []
+    },
+    {
+      "id": "werewolves",
+      "name": "Branco Black Hollow",
+      "status": "active",
+      "attitude": "unknown",
+      "current_goal": "Difendere il territorio e percepire i cambiamenti nel sovrannaturale",
+      "known_by_players": false,
+      "recent_activity": []
+    },
+    {
+      "id": "witches",
+      "name": "Congrega delle Custodi",
+      "status": "active",
+      "attitude": "unknown",
+      "current_goal": "Comprendere il simbolo, i sogni e la natura del Becoming",
+      "known_by_players": false,
+      "recent_activity": []
+    },
+    {
+      "id": "hunters",
+      "name": "Ordine dell'Occhio del Sole",
+      "status": "active",
+      "attitude": "unknown",
+      "current_goal": "Monitorare le anomalie e le sparizioni",
+      "known_by_players": false,
+      "recent_activity": []
+    }
+  ],
+  "npcs": [
+    {
+      "id": "lydia_hale",
+      "name": "Lydia Hale",
+      "alive": true,
+      "type": "civilian",
+      "location": "The Black Finch",
+      "relationship": "unknown",
+      "attitude_toward_players": "desperate/cooperative",
+      "known_secrets": [],
+      "public_information": [
+        "È la sorella di Mark Hale.",
+        "Mark è scomparso da due giorni.",
+        "Ha sognato Mark, che le ha detto: 'Ethan Crowley deve sapere.'",
+        "Non conosceva Ethan prima della telefonata."
+      ],
+      "notes": [
+        "Il cognome Hale potrebbe essere rilevante ma non è ancora stato collegato esplicitamente ad altre figure."
+      ]
+    },
+    {
+      "id": "mark_hale",
+      "name": "Mark Hale",
+      "alive": null,
+      "type": "missing_person",
+      "location": "unknown",
+      "relationship": "unknown",
+      "attitude_toward_players": "unknown",
+      "known_secrets": [],
+      "public_information": [
+        "Fratello di Lydia Hale.",
+        "Scomparso da due giorni.",
+        "È apparso in sogno a Lydia pronunciando il nome di Ethan."
+      ],
+      "notes": [
+        "Potrebbe essere collegato ai sogni condivisi, al simbolo o al Becoming."
+      ]
+    },
+    {
+      "id": "the_presence",
+      "name": "La Presenza",
+      "alive": null,
+      "type": "unknown_entity",
+      "location": "unknown",
+      "relationship": "watching_ethan",
+      "attitude_toward_players": "ambiguous",
+      "known_secrets": [],
+      "public_information": [
+        "Ha manifestato la propria voce nell'Archivio.",
+        "Ha dichiarato di non essere interessata a Cassian.",
+        "Ha osservato Ethan e gli ha detto che dovrà scegliere.",
+        "Ha affermato che il cambiamento non può essere completato senza consenso.",
+        "Prima di andarsene ha detto: 'Non oggi.'"
+      ],
+      "notes": [
+        "Non apertamente ostile.",
+        "Sembra rispettare o attendere il consenso di Ethan.",
+        "Identità sconosciuta."
+      ]
+    },
+    {
+      "id": "hooded_figure",
+      "name": "Figura Incappucciata",
+      "alive": null,
+      "type": "unknown",
+      "location": "unknown",
+      "relationship": "unknown",
+      "attitude_toward_players": "observing",
+      "known_secrets": [],
+      "public_information": [
+        "È apparsa nel cortile dell'Università nella nebbia.",
+        "Sembrava osservare direttamente Ethan.",
+        "Ha compiuto un gesto che richiama il simbolo.",
+        "È scomparsa nella nebbia."
+      ],
+      "notes": [
+        "Potrebbe essere collegata alla Presenza, al Testimone o a una fazione, ma non è confermato."
+      ]
+    }
+  ],
+  "mysteries": [
+    {
+      "id": "symbol_of_witness",
+      "name": "Il Simbolo",
+      "status": "active",
+      "progress": 30,
+      "clues_found": [
+        "clue_symbol_recurrence",
+        "clue_ethan_pendant_symbol",
+        "clue_hooded_figure_gesture"
+      ],
+      "questions": [
+        "Cos'è realmente il simbolo?",
+        "Perché compare nei sogni, nei libri, in città e sul ciondolo di Ethan?",
+        "Il simbolo è un avvertimento, una chiave o un marchio?"
+      ]
+    },
+    {
+      "id": "mark_hale_disappearance",
+      "name": "La Scomparsa di Mark Hale",
+      "status": "active",
+      "progress": 10,
+      "clues_found": [
+        "clue_mark_message_to_lydia"
+      ],
+      "questions": [
+        "Che fine ha fatto Mark Hale?",
+        "Come conosce il nome di Ethan?",
+        "Perché ha contattato Lydia attraverso un sogno?"
+      ]
+    },
+    {
+      "id": "ethan_hunger",
+      "name": "La Fame nei Sogni",
+      "status": "active",
+      "progress": 15,
+      "clues_found": [
+        "clue_ethan_dream_hunger"
+      ],
+      "questions": [
+        "Qual è il significato della fame nei sogni di Ethan?",
+        "È collegata alla sua natura nascosta?",
+        "La fame è un sintomo del Becoming o qualcosa di diverso?"
+      ]
+    },
+    {
+      "id": "de_generatione_intermedia",
+      "name": "De Generatione Intermedia",
+      "status": "active",
+      "progress": 20,
+      "clues_found": [
+        "clue_de_generatione_intermedia"
+      ],
+      "questions": [
+        "Cosa contiene realmente il libro?",
+        "Chi ha scritto il testo?",
+        "A quali stirpi intermedie si riferisce?"
+      ]
+    },
+    {
+      "id": "the_presence_identity",
+      "name": "La Presenza nell'Archivio",
+      "status": "active",
+      "progress": 10,
+      "clues_found": [
+        "clue_presence_targets_ethan"
+      ],
+      "questions": [
+        "Chi o cosa era la Presenza?",
+        "Perché non era interessata a Cassian?",
+        "Perché parla di scelta e consenso?"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "id": "clue_symbol_recurrence",
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "type": "symbol",
+      "description": "Il simbolo compare nei libri antichi, nei sogni di alcuni studenti, sui muri della città e nei casi di sparizione.",
+      "location_found": "Archivio dell'Università",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart"
+      ]
+    },
+    {
+      "id": "clue_hooded_figure_gesture",
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "type": "vision/encounter",
+      "description": "Una figura incappucciata osserva Ethan dal cortile dell'Università e compie un gesto che richiama il simbolo.",
+      "location_found": "Università di Ravenfall",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_ethan_pendant_symbol",
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "type": "object",
+      "description": "Il ciondolo di Ethan ha forma di mezzo cerchio e reca sul retro lo stesso simbolo del libro, ma incompleto. Quando Ethan lo separa dal collo, il dolore diminuisce e alcuni fenomeni cessano.",
+      "location_found": "Archivio dell'Università",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart"
+      ]
+    },
+    {
+      "id": "clue_de_generatione_intermedia",
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "type": "book",
+      "description": "Cassian trova il volume 'De Generatione Intermedia – Sulle stirpi che non dovevano esistere', contenente riferimenti a individui incompleti e a un cambiamento legato al sangue.",
+      "location_found": "Archivio dell'Università",
+      "discovered_by": [
+        "cassian_everhart"
+      ]
+    },
+    {
+      "id": "clue_presence_targets_ethan",
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "type": "entity_statement",
+      "description": "La Presenza dichiara di non essere interessata a Cassian, osserva Ethan, parla di scelta e afferma che il cambiamento non può essere completato senza consenso.",
+      "location_found": "Archivio dell'Università",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart"
+      ]
+    },
+    {
+      "id": "clue_ethan_dream_hunger",
+      "session": 2,
+      "chapter": "Capitolo II – Eco Diurne",
+      "type": "dream",
+      "description": "Ethan racconta di sognare volti sconosciuti, luoghi ignoti e una fame intensa e anomala. Non rivela però che il simbolo appare spesso nei suoi sogni.",
+      "location_found": "Appartamento di Ethan",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart"
+      ]
+    },
+    {
+      "id": "clue_mark_message_to_lydia",
+      "session": 2,
+      "chapter": "Capitolo II – Eco Diurne",
+      "type": "dream_message",
+      "description": "Lydia Hale sogna il fratello scomparso Mark, che le dice: 'Ethan Crowley deve sapere.' Lydia non conosceva Ethan.",
+      "location_found": "The Black Finch",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    }
+  ],
+  "open_threads": [
+    "Cos'è realmente il simbolo?",
+    "Chi era la Presenza nell'Archivio?",
+    "Perché il ciondolo di Ethan reagisce al simbolo?",
+    "Che fine ha fatto Mark Hale?",
+    "Come fa Mark Hale a conoscere il nome di Ethan?",
+    "Qual è il significato della fame nei sogni?",
+    "Perché Ethan è al centro di questi eventi?",
+    "Cosa contiene realmente il libro De Generatione Intermedia?",
+    "Chi era la figura incappucciata nel cortile dell'Università?",
+    "Perché la Presenza parla di scelta e consenso?"
+  ],
+  "event_log": [
+    {
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "title": "L'incontro all'Università",
+      "description": "Cassian contatta Ethan per mostrargli un antico tomo appartenuto a suo nonno. Nel libro compare un simbolo sconosciuto collegato a sogni, sparizioni e segni apparsi in città.",
+      "consequences": [
+        "Ethan viene coinvolto direttamente nell'indagine.",
+        "Il simbolo diventa il primo mistero centrale."
+      ]
+    },
+    {
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "title": "La figura nel cortile",
+      "description": "Un rumore attira Ethan verso la finestra. Nel cortile vede una figura incappucciata immersa nella nebbia, che lo osserva e compie un gesto legato al simbolo.",
+      "consequences": [
+        "Ethan subisce un forte dolore alla testa.",
+        "La presenza del simbolo sembra reagire direttamente a lui."
+      ]
+    },
+    {
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "title": "La stanza si chiude",
+      "description": "La porta dell'Archivio si blocca. Ethan percepisce voci indistinte, parole frammentate e una presenza rivolta a lui.",
+      "consequences": [
+        "La situazione assume una natura apertamente sovrannaturale.",
+        "Cassian tenta di decifrare il simbolo attraverso il libro."
+      ]
+    },
+    {
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "title": "Il ciondolo reagisce",
+      "description": "Ethan strappa dal collo il ciondolo che porta dall'infanzia e scopre che reca una versione incompleta del simbolo. Separarlo dal collo riduce il dolore e modifica i fenomeni nella stanza.",
+      "consequences": [
+        "Il ciondolo diventa un oggetto chiave.",
+        "Ethan comprende di essere collegato al mistero più di quanto immaginasse."
+      ]
+    },
+    {
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "title": "De Generatione Intermedia",
+      "description": "Cassian trova un volume intitolato 'De Generatione Intermedia – Sulle stirpi che non dovevano esistere', contenente frasi su individui incompleti e cambiamenti legati al sangue.",
+      "consequences": [
+        "Si apre una pista legata al sangue e a stirpi impossibili.",
+        "Cassian ottiene un nuovo testo da studiare."
+      ]
+    },
+    {
+      "session": 1,
+      "chapter": "Capitolo I – Il Simbolo",
+      "title": "La Presenza",
+      "description": "Una voce senza identità parla a Ethan e Cassian. Dice di non essere interessata a Cassian, osserva Ethan, parla di scelta e afferma che il cambiamento non può essere completato senza consenso. Ethan resta in silenzio. La Presenza accetta e conclude: 'Non oggi.'",
+      "consequences": [
+        "La minaccia non scompare, ma decide di attendere.",
+        "Ethan viene riconosciuto come individuo importante da una forza sconosciuta."
+      ]
+    },
+    {
+      "session": 2,
+      "chapter": "Capitolo II – Eco Diurne",
+      "title": "La mattina dopo",
+      "description": "Cassian trascorre la notte nell'appartamento di Ethan per prudenza e per continuare a studiare il libro. Ethan era debilitato dagli eventi dell'Archivio.",
+      "consequences": [
+        "La fiducia tra Ethan e Cassian aumenta.",
+        "Cassian continua a indagare sul simbolo."
+      ]
+    },
+    {
+      "session": 2,
+      "chapter": "Capitolo II – Eco Diurne",
+      "title": "La fame nei sogni",
+      "description": "Ethan rivela a Cassian di sognare volti sconosciuti, luoghi ignoti e una fame intensa e anomala. Non gli racconta che il simbolo appare spesso nei sogni.",
+      "consequences": [
+        "Cassian si preoccupa della parola 'fame'.",
+        "La fame diventa una nuova traccia investigativa."
+      ]
+    },
+    {
+      "session": 2,
+      "chapter": "Capitolo II – Eco Diurne",
+      "title": "La telefonata di Lydia Hale",
+      "description": "Ethan riceve una chiamata da Lydia Hale, il cui fratello Mark è scomparso da due giorni. Lydia racconta di aver sognato Mark, che le ha detto: 'Ethan Crowley deve sapere.'",
+      "consequences": [
+        "La scomparsa di Mark Hale diventa un nuovo mistero attivo.",
+        "Il nome di Ethan appare in un sogno di una sconosciuta."
+      ]
+    },
+    {
+      "session": 2,
+      "chapter": "Capitolo II – Eco Diurne",
+      "title": "Incontro al Black Finch",
+      "description": "Ethan incontra Lydia Hale al bar The Black Finch. Lydia ripete il messaggio ricevuto in sogno: 'Mark mi ha detto: Ethan Crowley deve sapere.'",
+      "consequences": [
+        "La scena resta aperta.",
+        "Ethan deve decidere come reagire e quale pista seguire."
+      ]
+    }
+  ],
+  "narrator_private_notes": [
+    "Non rivelare direttamente la vera natura di Ethan.",
+    "Non spiegare la Frattura o il Velo ai giocatori.",
+    "La Presenza deve rimanere ambigua finché non emergerà attraverso indizi.",
+    "Il cognome Hale può creare risonanze con l'Ordine dell'Occhio del Sole, ma non va forzato senza sviluppo narrativo.",
+    "Il ciondolo di Ethan è una chiave narrativa centrale e va collegato gradualmente al simbolo."
+  ]
+}

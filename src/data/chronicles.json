@@ -1,0 +1,78 @@
+{
+  "title": "Becoming - La Nuova Razza",
+  "subtitle": "Cronache di Ravenfall",
+  "status": "in_progress",
+  "chapters": [
+    {
+      "id": "il-simbolo",
+      "number": 1,
+      "title": "Il Simbolo",
+      "narrator": "ethan",
+      "chapter_date": "Giorno 1",
+      "summary": "Ethan inizia a essere perseguitato da sogni frammentati, da una fame anomala e dall'immagine ricorrente di un simbolo misterioso.",
+      "content": [
+        "Ethan si svegliò con la sensazione che qualcosa fosse rimasto aggrappato alla sua pelle.",
+        "Non ricordava il sogno per intero. Solo frammenti: volti sconosciuti, ombre immobili, un'inquietudine impossibile da spiegare.",
+        "E poi c'era la fame.",
+        "Non la fame normale, quella che arriva con il mattino e si placa con il cibo. Era diversa. Più profonda. Più antica. Come un vuoto scavato da qualcosa che non apparteneva del tutto al suo corpo.",
+        "Sul bordo della memoria restava anche un'immagine: un simbolo circolare, incompleto eppure familiare, come se lo avesse già visto molto prima di nascere.",
+        "Ethan non lo disse a nessuno.",
+        "Non ancora."
+      ]
+    },
+    {
+      "id": "eco-diurne",
+      "number": 2,
+      "title": "Eco Diurne",
+      "narrator": "ethan",
+      "chapter_date": "Giorno 2",
+      "summary": "Ethan riceve la telefonata di Lydia, che gli rivela che Mark ha pronunciato il suo nome prima di scomparire.",
+      "content": [
+        "Il cellulare vibrò sul tavolo.",
+        "Ethan fissò il numero sconosciuto per qualche secondo prima di rispondere.",
+        "La voce dall'altra parte apparteneva a una ragazza. Si chiamava Lydia, e parlava come chi ha passato troppo tempo a convincersi di non essere pazza.",
+        "Gli raccontò di Mark. Della sua scomparsa. Dei sogni. Di parole pronunciate in un luogo che forse non era davvero un sogno.",
+        "Poi disse la frase che fece cambiare peso all'aria nella stanza.",
+        "«Mark mi ha detto: Ethan Crowley deve sapere.»",
+        "Ethan non rispose subito.",
+        "Perché mentre Lydia parlava, qualcosa dentro di lui aveva tremato."
+      ]
+    },
+    {
+      "id": "la-casa-di-cassian",
+      "number": 3,
+      "title": "La Casa di Cassian",
+      "narrator": "cassian",
+      "chapter_date": "Giorno 2",
+      "summary": "Cassian ascolta il racconto di Ethan e comprende che gli incubi dell'amico potrebbero essere collegati a qualcosa di reale.",
+      "content": [
+        "Cassian ascoltò senza interrompere.",
+        "Ethan non era il tipo da lasciarsi suggestionare facilmente. Se aveva deciso di parlargli di quei sogni, allora qualcosa doveva aver incrinato la sua razionalità.",
+        "Volti sconosciuti. Inquietudine. Fame.",
+        "Cassian conosceva abbastanza Ravenfall da sapere che certe parole non andavano liquidate come semplici coincidenze.",
+        "Quando Ethan tacque, lui abbassò lo sguardo verso l'orologio.",
+        "Avrebbe voluto fare domande. Molte domande.",
+        "Ma prima doveva cercare risposte."
+      ]
+    },
+    {
+      "id": "il-black-finch",
+      "number": 4,
+      "title": "Il Black Finch",
+      "narrator": "ethan",
+      "chapter_date": "Giorno 2",
+      "summary": "Ethan e Lydia si incontrano al Black Finch. Le parole di Mark sembrano legare Ethan a una vicenda che non comprende ancora.",
+      "content": [
+        "Il Black Finch era uno di quei luoghi che sembravano esistere da sempre, incastrati tra pioggia, mattoni scuri e conversazioni sussurrate.",
+        "Lydia era già lì.",
+        "Aveva l'aria di chi aveva dormito poco e pensato troppo.",
+        "Ethan si sedette davanti a lei, cercando di mantenere il controllo su una situazione che sembrava sfuggirgli a ogni nuova parola.",
+        "Mark era scomparso da due giorni.",
+        "Nei sogni di Lydia aveva pronunciato il suo nome.",
+        "Ethan Crowley deve sapere.",
+        "Ancora una volta, Ethan sentì quel brivido attraversargli il corpo.",
+        "Come se una parte di lui avesse riconosciuto quelle parole prima ancora di comprenderle."
+      ]
+    }
+  ]
+}
