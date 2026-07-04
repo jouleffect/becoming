@@ -29,7 +29,7 @@ export default function InteractiveMap() {
     <div className="interactiveMapLayout">
       <div className="interactiveMapFrame">
         <img
-          src="/assets/ravenfall-map.png"
+          src="/becoming/assets/ravenfall-map.png"
           alt="Mappa interattiva di Ravenfall"
           className="interactiveMapImage"
         />
