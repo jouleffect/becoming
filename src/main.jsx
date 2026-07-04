@@ -25,7 +25,7 @@ const nav = [
 ]
 
 function getPortrait(characterId) {
-  return `/assets/${characterId}-portrait.png`
+  return `/becoming/assets/${characterId}-portrait.png`
 }
 
 function SigilDivider() {
