@@ -2,32 +2,35 @@
   "campaign": {
     "name": "Becoming – Campagna I: La Nuova Razza",
     "version": "1.0",
-    "current_session": 2,
+    "current_session": 4,
     "started_at": null,
     "status": "active",
     "mode": "retroactive_save",
     "notes": [
       "Creato retroattivamente a partire dalla cronologia giocata prima dell'introduzione del sistema campaign.json.",
-      "La campagna è ancora nella fase iniziale di Inquietudine."
+      "Aggiornato dopo la conclusione del Capitolo IV – Le Tracce di Mark."
     ]
   },
   "session": {
-    "current_chapter": "Capitolo II – Eco Diurne",
-    "current_scene": "The Black Finch",
-    "last_scene": "Ethan è seduto al tavolo del Black Finch davanti a Lydia Hale, che ha appena riferito il messaggio onirico di Mark: 'Ethan Crowley deve sapere.'",
-    "resume_from": "Ethan deve reagire alla frase di Lydia e decidere come proseguire l'indagine sulla scomparsa di Mark Hale."
+    "current_chapter": "Capitolo V – Haven House",
+    "current_scene": "Appartamento di Ethan, mattina seguente",
+    "last_scene": "Ethan ha lasciato l'archivio universitario portando con sé la fotografia di Haven House, la mappa nascosta, la pagina degli appunti di Mark e la nota sul custode. Tornato a casa, ha analizzato i materiali da solo e ha deciso di contattare Cassian la mattina seguente.",
+    "resume_from": "Ethan si trova a casa dopo una notte difficile. La prossima azione prevista è contattare Cassian e mostrargli fotografia, mappa, data del 17 ottobre 2001 e gli altri elementi raccolti su Haven House."
   },
   "world_state": {
-    "supernatural_activity": "low",
+    "supernatural_activity": "medium",
     "public_awareness": "low",
     "faction_tension": "medium",
     "becoming_level": "low",
-    "escalation_level": 1,
-    "escalation_name": "Inquietudine",
+    "escalation_level": 2,
+    "escalation_name": "Convergenza",
     "notes": [
       "Ravenfall è attraversata da sparizioni, sogni condivisi e simboli misteriosi.",
       "Il sovrannaturale resta nascosto alla popolazione generale.",
-      "Le anomalie iniziano a concentrarsi intorno a Ethan Crowley."
+      "Le anomalie iniziano a concentrarsi intorno a Ethan Crowley.",
+      "Le anomalie non si limitano più ai sogni: documenti e messaggi sembrano comparire in luoghi chiusi o sorvegliati.",
+      "La pista di Mark Hale conduce a Haven House, un luogo apparentemente cancellato dagli archivi ufficiali.",
+      "Ethan possiede ora prove materiali che lo collegano a eventi avvenuti durante la sua infanzia."
     ]
   },
   "locations": [
@@ -35,13 +38,13 @@
       "id": "universita",
       "discovered": true,
       "discovery_order": 1,
-      "last_visit": "Capitolo I – Il Simbolo"
+      "last_visit": "Capitolo IV – Le Tracce di Mark"
     },
     {
       "id": "ethan-apartment",
       "discovered": true,
       "discovery_order": 2,
-      "last_visit": "Capitolo II – Eco Diurne"
+      "last_visit": "Capitolo IV – Le Tracce di Mark"
     },
     {
       "id": "cassian-house",
@@ -102,6 +105,27 @@
       "discovered": false,
       "discovery_order": null,
       "last_visit": null
+    },
+    {
+      "id": "archivio-universitario-nascosto",
+      "discovered": true,
+      "discovery_order": 5,
+      "last_visit": "Capitolo IV – Le Tracce di Mark",
+      "notes": "Sala d'archivio in cui Ethan ha incontrato Adrian, Miriam e Jonah e ha trovato le tracce più concrete su Mark e Haven House."
+    },
+    {
+      "id": "haven-house",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null,
+      "notes": "Istituto legato all'infanzia di Ethan. La possibile posizione è nella periferia nord, oggi area industriale/magazzini. Non ancora visitato in gioco."
+    },
+    {
+      "id": "periferia-nord-industriale",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null,
+      "notes": "Area moderna che potrebbe corrispondere alla posizione indicata dalla mappa nascosta di Haven House."
     }
   ],
   "players": [
@@ -114,10 +138,10 @@
       "race_real": "Mezzosangue",
       "becoming_stage": 0,
       "humanity": 100,
-      "health": "debilitated",
-      "current_location": "The Black Finch",
+      "health": "shaken",
+      "current_location": "Appartamento di Ethan",
       "health_points": 5,
-      "stress": 2,
+      "stress": 4,
       "attributes": {
         "istinto": 5,
         "volonta": 4,
@@ -154,18 +178,50 @@
           "description": "Ciondolo portato fin dall'infanzia. Ha forma di mezzo cerchio e reca sul retro una versione incompleta del simbolo del libro.",
           "status": "in_possession",
           "importance": "high"
+        },
+        {
+          "id": "mark_hale_notes_page",
+          "name": "Pagina degli appunti di Mark Hale",
+          "description": "Pagina trovata tramite Jonah: riporta il simbolo, il nome Ethan Crowley, riferimenti alla donna del sogno, all'uomo allo specchio e all'Archivio Nascosto.",
+          "status": "in_possession",
+          "importance": "high"
+        },
+        {
+          "id": "haven_house_photo",
+          "name": "Fotografia di Haven House",
+          "description": "Fotografia ingiallita di Ethan bambino davanti a Haven House. Sul retro: 'Soggetto Ethan Crowley - Primo evento registrato.' Reca la sigla A.N.",
+          "status": "in_possession",
+          "importance": "high"
+        },
+        {
+          "id": "haven_house_map",
+          "name": "Mappa nascosta di Haven House",
+          "description": "Mappa nascosta dietro la fotografia. Indica Haven House, una data — 17 ottobre 2001 — e la nota: 'Se Haven House esiste ancora, cercare il custode.'",
+          "status": "in_possession",
+          "importance": "high"
+        },
+        {
+          "id": "adrian_warning_note",
+          "name": "Nota contro Adrian",
+          "description": "Foglio apparso nell'archivio con la frase: 'NON FIDATEVI DI ADRIAN.' Origine sconosciuta.",
+          "status": "in_possession",
+          "importance": "medium"
         }
       ],
       "goals": [
         "Scoprire la causa degli eventi anomali di Ravenfall",
         "Capire perché il simbolo reagisce a lui",
         "Scoprire cosa è accaduto a Mark Hale",
-        "Proteggere gli innocenti"
+        "Proteggere gli innocenti",
+        "Trovare Haven House",
+        "Contattare Cassian e mostrargli le prove raccolte"
       ],
       "notes": [
         "Non conosce la propria vera natura.",
         "Ha scelto di non rispondere alla Presenza nell'Archivio.",
-        "È apparentemente il centro dell'attenzione di una forza sovrannaturale sconosciuta."
+        "È apparentemente il centro dell'attenzione di una forza sovrannaturale sconosciuta.",
+        "Ha deciso di non rivelare ad Adrian, Miriam e Jonah l'intenzione di coinvolgere Cassian.",
+        "Ha scelto di lasciare l'archivio prima di indagare i rumori al piano superiore."
       ]
     },
     {
@@ -208,7 +264,8 @@
       "notes": [
         "Ha trascorso la notte nell'appartamento di Ethan dopo gli eventi dell'Archivio.",
         "È preoccupato dalla parola 'fame' usata da Ethan.",
-        "Sta studiando il libro e i collegamenti storici."
+        "Sta studiando il libro e i collegamenti storici.",
+        "Non sa ancora degli eventi dell'archivio del Capitolo IV, ma Ethan intende contattarlo la mattina seguente."
       ]
     }
   ],
@@ -246,6 +303,41 @@
       "target": "ethan_crowley",
       "type": "legame oscuro",
       "description": "Una presenza sconosciuta sembra connessa ai sogni e alla fame anomala di Ethan.",
+      "known": true
+    },
+    {
+      "source": "ethan_crowley",
+      "target": "adrian",
+      "type": "fiducia fragile",
+      "description": "Ethan ha ottenuto informazioni da Adrian ma possiede anche una nota che lo invita a non fidarsi di lui.",
+      "known": true
+    },
+    {
+      "source": "ethan_crowley",
+      "target": "miriam",
+      "type": "alleanza incerta",
+      "description": "Miriam sembra conoscere A.N. e Haven House, ma resta reticente su parte delle informazioni.",
+      "known": true
+    },
+    {
+      "source": "ethan_crowley",
+      "target": "jonah",
+      "type": "alleanza incerta",
+      "description": "Jonah ha fornito la pagina degli appunti di Mark e ha rivelato casi precedenti simili.",
+      "known": true
+    },
+    {
+      "source": "mark_hale",
+      "target": "haven-house",
+      "type": "ultima pista",
+      "description": "Mark stava cercando Haven House e il suo possibile custode prima di sparire.",
+      "known": true
+    },
+    {
+      "source": "ethan_crowley",
+      "target": "haven-house",
+      "type": "legame d'infanzia",
+      "description": "Una fotografia mostra Ethan bambino davanti a Haven House, con la dicitura 'Primo evento registrato'.",
       "known": true
     }
   ],
@@ -319,10 +411,16 @@
       "public_information": [
         "Fratello di Lydia Hale.",
         "Scomparso da due giorni.",
-        "È apparso in sogno a Lydia pronunciando il nome di Ethan."
+        "È apparso in sogno a Lydia pronunciando il nome di Ethan.",
+        "Stava indagando sul simbolo e sull'Archivio Nascosto.",
+        "Nei suoi appunti compare ripetutamente il nome di Ethan Crowley.",
+        "Aveva trovato o copiato una fotografia di Ethan bambino davanti a Haven House.",
+        "Stava cercando Haven House prima di scomparire."
       ],
       "notes": [
-        "Potrebbe essere collegato ai sogni condivisi, al simbolo o al Becoming."
+        "Potrebbe essere collegato ai sogni condivisi, al simbolo o al Becoming.",
+        "La sua indagine conduce alla periferia nord e al possibile sito di Haven House.",
+        "La pagina dei suoi appunti è ora in possesso di Ethan."
       ]
     },
     {
@@ -365,6 +463,85 @@
       "notes": [
         "Potrebbe essere collegata alla Presenza, al Testimone o a una fazione, ma non è confermato."
       ]
+    },
+    {
+      "id": "adrian",
+      "name": "Adrian",
+      "alive": true,
+      "type": "investigator/occult_researcher",
+      "location": "Archivio universitario",
+      "relationship": "alleato incerto",
+      "attitude_toward_players": "guarded/cooperative",
+      "known_secrets": [],
+      "public_information": [
+        "Conosce il nome di Ethan.",
+        "Sostiene di cercare Mark Hale da tre settimane.",
+        "Ha incontrato Mark prima della scomparsa e lo descrive come terrorizzato.",
+        "Conosce il concetto di Archivio Nascosto come raccolta di documenti su persone scomparse.",
+        "Ha mostrato a Ethan la fotografia di Haven House trovata tra gli appunti di Mark."
+      ],
+      "notes": [
+        "Una nota apparsa misteriosamente nell'archivio avverte: 'NON FIDATEVI DI ADRIAN.'",
+        "Adrian sembra più spaventato dall'apparizione impossibile del foglio che dall'accusa contenuta nel messaggio."
+      ]
+    },
+    {
+      "id": "miriam",
+      "name": "Miriam",
+      "alive": true,
+      "type": "independent_investigator",
+      "location": "Archivio universitario",
+      "relationship": "alleata incerta",
+      "attitude_toward_players": "guarded/direct",
+      "known_secrets": [],
+      "public_information": [
+        "Conosce il nome di Ethan.",
+        "Sostiene che Adrian ometta metà della storia.",
+        "Ha riconosciuto la sigla A.N. come elemento ricorrente in documenti su persone osservate prima di eventi inspiegabili.",
+        "Conosce il nome Haven House come possibile leggenda o luogo cancellato."
+      ],
+      "notes": [
+        "È reticente ma meno evasiva quando Ethan pretende risposte concrete.",
+        "Ha suggerito implicitamente che Haven House sia più di una semplice pista storica."
+      ]
+    },
+    {
+      "id": "jonah",
+      "name": "Jonah",
+      "alive": true,
+      "type": "older_investigator",
+      "location": "Archivio universitario",
+      "relationship": "alleato incerto",
+      "attitude_toward_players": "direct/suspicious",
+      "known_secrets": [],
+      "public_information": [
+        "Uomo anziano dai capelli grigi e cappotto scuro.",
+        "Ha portato una pagina degli appunti di Mark Hale.",
+        "Conosce casi precedenti di persone scomparse dopo aver iniziato a scrivere nomi di sconosciuti.",
+        "Ha citato il caso di Claire Morton, scomparsa tre anni prima.",
+        "Ha aperto il secondo strato della fotografia rivelando la mappa di Haven House."
+      ],
+      "notes": [
+        "Spinge verso risposte più dirette, ma non rivela tutto ciò che sa.",
+        "Ha riconosciuto la natura ricorrente del fenomeno senza possederne una spiegazione completa."
+      ]
+    },
+    {
+      "id": "claire_morton",
+      "name": "Claire Morton",
+      "alive": null,
+      "type": "missing_person",
+      "location": "unknown",
+      "relationship": "precedent_case",
+      "attitude_toward_players": "unknown",
+      "known_secrets": [],
+      "public_information": [
+        "Studentessa di ventitré anni scomparsa tre anni prima.",
+        "Prima di sparire aveva riempito quattro quaderni con nomi di persone che non avrebbe dovuto conoscere."
+      ],
+      "notes": [
+        "Caso precedente citato da Jonah come pattern simile alla vicenda di Mark Hale."
+      ]
     }
   ],
   "mysteries": [
@@ -372,11 +549,12 @@
       "id": "symbol_of_witness",
       "name": "Il Simbolo",
       "status": "active",
-      "progress": 30,
+      "progress": 40,
       "clues_found": [
         "clue_symbol_recurrence",
         "clue_ethan_pendant_symbol",
-        "clue_hooded_figure_gesture"
+        "clue_hooded_figure_gesture",
+        "clue_mark_hidden_archive_notes"
       ],
       "questions": [
         "Cos'è realmente il simbolo?",
@@ -388,14 +566,21 @@
       "id": "mark_hale_disappearance",
       "name": "La Scomparsa di Mark Hale",
       "status": "active",
-      "progress": 10,
+      "progress": 45,
       "clues_found": [
-        "clue_mark_message_to_lydia"
+        "clue_mark_message_to_lydia",
+        "clue_mark_hidden_archive_notes",
+        "clue_haven_house_photo",
+        "clue_haven_house_map",
+        "clue_haven_house_date"
       ],
       "questions": [
         "Che fine ha fatto Mark Hale?",
         "Come conosce il nome di Ethan?",
-        "Perché ha contattato Lydia attraverso un sogno?"
+        "Perché ha contattato Lydia attraverso un sogno?",
+        "Perché Mark cercava Haven House?",
+        "Mark ha trovato il custode prima di sparire?",
+        "Chi o cosa lo ha fatto scomparire?"
       ]
     },
     {
@@ -438,6 +623,54 @@
         "Chi o cosa era la Presenza?",
         "Perché non era interessata a Cassian?",
         "Perché parla di scelta e consenso?"
+      ]
+    },
+    {
+      "id": "haven_house",
+      "name": "Haven House",
+      "status": "active",
+      "progress": 35,
+      "clues_found": [
+        "clue_haven_house_photo",
+        "clue_haven_house_map",
+        "clue_haven_house_date",
+        "clue_haven_house_keeper_note"
+      ],
+      "questions": [
+        "Cos'era realmente Haven House?",
+        "Perché i documenti ufficiali sembrano cancellati?",
+        "Perché Ethan bambino era stato fotografato lì?",
+        "Cosa accadde il 17 ottobre 2001?",
+        "Chi è il custode?"
+      ]
+    },
+    {
+      "id": "a_n_signature",
+      "name": "La sigla A.N.",
+      "status": "active",
+      "progress": 20,
+      "clues_found": [
+        "clue_an_signature"
+      ],
+      "questions": [
+        "Cosa significa A.N.?",
+        "Chi osservava le persone indicate nei vecchi dossier?",
+        "A.N. è un'organizzazione, una persona o una classificazione?"
+      ]
+    },
+    {
+      "id": "hidden_archive",
+      "name": "L'Archivio Nascosto",
+      "status": "active",
+      "progress": 25,
+      "clues_found": [
+        "clue_mark_hidden_archive_notes",
+        "clue_hidden_archive_definition"
+      ],
+      "questions": [
+        "Cos'è davvero l'Archivio Nascosto?",
+        "Chi raccoglie documenti sulle persone scomparse?",
+        "Quale connessione esiste tra Archivio Nascosto, A.N. e Haven House?"
       ]
     }
   ],
@@ -522,6 +755,123 @@
       "discovered_by": [
         "ethan_crowley"
       ]
+    },
+    {
+      "id": "clue_mark_hidden_archive_notes",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "document",
+      "description": "Una pagina degli appunti di Mark riporta: il simbolo ricorrente, 'Lydia dice che sono soltanto sogni', il nome ETHAN CROWLEY, la donna del sogno, l'uomo allo specchio con il suo volto e la frase 'SE TROVO L'ARCHIVIO NASCOSTO TROVERÒ LE RISPOSTE'. La pagina è datata tre giorni prima della scomparsa di Mark.",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_hidden_archive_definition",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "testimony",
+      "description": "Adrian e Miriam descrivono l'Archivio Nascosto come una raccolta di documenti relativi a persone scomparse e connessioni inspiegabili, non come un semplice luogo fisico.",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_adrian_warning_note",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "anomalous_note",
+      "description": "Durante un blackout brevissimo appare sul tavolo un foglio con la frase: 'NON FIDATEVI DI ADRIAN.' Nessuno dei presenti sembra averlo posato.",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley",
+        "adrian",
+        "miriam",
+        "jonah"
+      ]
+    },
+    {
+      "id": "clue_previous_cases_claire_morton",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "testimony",
+      "description": "Jonah cita Claire Morton, studentessa di ventitré anni scomparsa tre anni prima dopo aver riempito quaderni con nomi di persone che non avrebbe dovuto conoscere.",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_haven_house_photo",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "photograph",
+      "description": "Fotografia ingiallita di Ethan bambino davanti a un edificio chiamato Haven House. Sul retro compare la scritta 'Soggetto Ethan Crowley - Primo evento registrato.'",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_an_signature",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "marking",
+      "description": "Sul retro della fotografia compare la sigla A.N. Miriam la collega a documenti più vecchi su persone osservate prima di eventi inspiegabili.",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_haven_house_map",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "map",
+      "description": "Un secondo strato nascosto nella fotografia contiene una mappa della città con Haven House cerchiata. L'allineamento suggerisce una zona nella periferia nord oggi industriale.",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley",
+        "jonah"
+      ]
+    },
+    {
+      "id": "clue_haven_house_date",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "date",
+      "description": "Sulla mappa nascosta compare la data 17 ottobre 2001, apparentemente collegata a Haven House, alla fotografia o al primo evento registrato relativo a Ethan.",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_haven_house_keeper_note",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "note",
+      "description": "Sotto la data sulla mappa compare la frase: 'Se Haven House esiste ancora, cercare il custode.'",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_archive_upper_floor_presence",
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "type": "unresolved_event",
+      "description": "Rumori metallici, scricchiolii e un possibile scatto di serratura provengono dal piano superiore dell'archivio. Ethan sceglie di non indagare e lascia il luogo.",
+      "location_found": "Archivio universitario",
+      "discovered_by": [
+        "ethan_crowley",
+        "adrian",
+        "miriam",
+        "jonah"
+      ]
     }
   ],
   "open_threads": [
@@ -534,7 +884,17 @@
     "Perché Ethan è al centro di questi eventi?",
     "Cosa contiene realmente il libro De Generatione Intermedia?",
     "Chi era la figura incappucciata nel cortile dell'Università?",
-    "Perché la Presenza parla di scelta e consenso?"
+    "Perché la Presenza parla di scelta e consenso?",
+    "Cos'era realmente Haven House?",
+    "Cosa accadde il 17 ottobre 2001?",
+    "Chi è il custode indicato dalla nota?",
+    "Cosa significa la sigla A.N.?",
+    "Chi ha fotografato Ethan bambino?",
+    "Chi era la figura nascosta nell'ombra della fotografia?",
+    "Perché Mark stava cercando Ethan?",
+    "Perché una nota avverte di non fidarsi di Adrian?",
+    "Chi o cosa si trovava al piano superiore dell'archivio?",
+    "Come reagirà Cassian quando vedrà fotografia e mappa?"
   ],
   "event_log": [
     {
@@ -636,6 +996,67 @@
         "La scena resta aperta.",
         "Ethan deve decidere come reagire e quale pista seguire."
       ]
+    },
+    {
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "title": "Incontro nell'archivio universitario",
+      "description": "Ethan entra nell'archivio seguendo la pista di Mark e incontra Adrian, Miriam e Jonah, tre figure che conoscono il suo nome e seguono la stessa vicenda da prospettive diverse.",
+      "consequences": [
+        "Ethan scopre di non essere l'unico a indagare sulla scomparsa di Mark.",
+        "Adrian, Miriam e Jonah diventano alleati incerti e potenziali fonti di informazione."
+      ]
+    },
+    {
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "title": "La pagina di Mark",
+      "description": "Jonah consegna a Ethan una pagina degli appunti di Mark Hale. La pagina collega il simbolo, Lydia, Ethan Crowley, una donna del sogno, un uomo allo specchio e l'Archivio Nascosto.",
+      "consequences": [
+        "Il nome di Ethan risulta presente negli appunti di Mark prima del loro incontro.",
+        "L'Archivio Nascosto diventa una pista centrale."
+      ]
+    },
+    {
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "title": "Risposte concrete",
+      "description": "Ethan pretende spiegazioni meno vaghe. Jonah rivela casi precedenti, tra cui Claire Morton, e il gruppo definisce la situazione: Mark indagava un fenomeno ignoto e tutte le piste stanno convergendo su Ethan.",
+      "consequences": [
+        "La scomparsa di Mark viene collegata a un pattern più ampio.",
+        "Ethan comprende che Adrian, Miriam e Jonah non sono un gruppo unico, ma persone finite sulla stessa pista."
+      ]
+    },
+    {
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "title": "La fotografia di Haven House",
+      "description": "Adrian mostra una fotografia trovata tra gli appunti di Mark: Ethan bambino davanti a Haven House, con la dicitura 'Soggetto Ethan Crowley - Primo evento registrato' e la sigla A.N.",
+      "consequences": [
+        "Haven House diventa una pista concreta legata all'infanzia di Ethan.",
+        "La sigla A.N. entra tra i misteri attivi."
+      ]
+    },
+    {
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "title": "La mappa nascosta",
+      "description": "Jonah apre un secondo strato nascosto nella fotografia e rivela una mappa della città. La mappa indica Haven House, la data 17 ottobre 2001 e la nota: 'Se Haven House esiste ancora, cercare il custode.'",
+      "consequences": [
+        "Ethan ottiene una possibile destinazione nella periferia nord.",
+        "La data 17 ottobre 2001 e il custode diventano nuove piste verificabili."
+      ]
+    },
+    {
+      "session": 4,
+      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "title": "Uscita dall'archivio",
+      "description": "Dopo rumori inspiegabili al piano superiore e l'apparizione di una nota contro Adrian, Ethan decide di lasciare l'archivio portando con sé foto, mappa e appunti. Non rivela agli altri l'intenzione di contattare Cassian.",
+      "consequences": [
+        "Ethan mantiene il controllo delle prove materiali.",
+        "Il piano superiore dell'archivio resta un pericolo o mistero irrisolto.",
+        "Il prossimo passo sarà coinvolgere Cassian."
+      ]
     }
   ],
   "narrator_private_notes": [
@@ -643,6 +1064,11 @@
     "Non spiegare la Frattura o il Velo ai giocatori.",
     "La Presenza deve rimanere ambigua finché non emergerà attraverso indizi.",
     "Il cognome Hale può creare risonanze con l'Ordine dell'Occhio del Sole, ma non va forzato senza sviluppo narrativo.",
-    "Il ciondolo di Ethan è una chiave narrativa centrale e va collegato gradualmente al simbolo."
+    "Il ciondolo di Ethan è una chiave narrativa centrale e va collegato gradualmente al simbolo.",
+    "Nel prossimo capitolo non dare per scontato che Cassian sappia di Haven House: Ethan deve raccontarglielo.",
+    "Ethan NON ha nominato Cassian davanti ad Adrian, Miriam o Jonah.",
+    "La data 17 ottobre 2001 è una pista importante e va trattata come elemento cronologico verificabile.",
+    "Haven House deve restare una scoperta graduale: non rivelare subito la sua vera funzione.",
+    "Adrian è sotto sospetto a causa della nota, ma non confermare ancora se sia affidabile o meno."
   ]
 }
