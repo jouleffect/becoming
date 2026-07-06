@@ -12,7 +12,6 @@ import {
   MiniMap
 } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
-import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 
 const nav = [
