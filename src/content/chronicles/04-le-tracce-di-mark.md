@@ -1,5 +1,3 @@
-# Capitolo IV — Le Tracce di Mark
-
 Dopo l'incontro con Lydia Hale al Black Finch, tornai verso l'Università di Ravenfall con la sensazione che il caso di Mark non fosse più una semplice scomparsa. Il nome pronunciato nel sogno di Lydia, il simbolo ricorrente e gli appunti strappati indicavano tutti la stessa direzione: Mark aveva visto qualcosa prima di sparire, e quel qualcosa conduceva di nuovo agli archivi dell'università.
 
 La notte aveva reso l'edificio ancora più severo. Le finestre alte riflettevano la pioggia come occhi ciechi, e i corridoi sembravano trattenere il respiro. Trovai una vecchia traccia del simbolo su una colonna, una versione più antica e meno definita di quella vista nei sogni e nei libri. Non era una prova risolutiva, ma bastava a confermarmi che Mark non aveva inseguito fantasie prive di fondamento.
