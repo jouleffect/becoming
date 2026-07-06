@@ -2,7 +2,6 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BookOpen, Castle, Eye, Map, Moon, ScrollText, Shield, Sparkles, Users, Feather, Skull, ChevronRight } from 'lucide-react'
 import campaign from './data/campaign.json'
-import chronicles from './data/chronicles.json'
 import InteractiveMap from "./components/InteractiveMap";
 import './styles.css'
 import dagre from 'dagre'
@@ -13,6 +12,8 @@ import {
   MiniMap
 } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
+import { useState } from 'react'
+import ReactMarkdown from 'react-markdown'
 
 const nav = [
   ['home', 'Home'],
@@ -23,6 +24,31 @@ const nav = [
   ['misteri', 'Misteri'],  
   ['regole', 'Regole']
 ]
+
+const chapterModules = import.meta.glob('./content/chronicles/*.md', {
+  query: '?raw',
+  import: 'default',
+  eager: true
+})
+
+const chapters = Object.entries(chapterModules)
+  .map(([path, content]) => {
+    const fileName = path.split('/').pop().replace('.md', '')
+    const [number, ...titleParts] = fileName.split('-')
+
+    const title = titleParts
+      .join(' ')
+      .replace(/\b\w/g, char => char.toUpperCase())
+
+    return {
+      id: fileName,
+      number: Number(number),
+      title,
+      narrator: 'Ethan Crowley',
+      content
+    }
+  })
+  .sort((a, b) => a.number - b.number)
 
 function getPortrait(characterId) {
   return `/becoming/assets/${characterId}-portrait.png`
@@ -156,16 +182,13 @@ function Campagna() {
 }
 
 function Cronache() {
-  const [selectedChapter, setSelectedChapter] = useState(
-    chronicles.chapters[0]
-  )
+  const [selectedChapter, setSelectedChapter] = useState(chapters[0])
 
   return (
     <section className="chronicles-page">
-
       <div className="section-heading">
-        <p className="eyebrow">{chronicles.subtitle}</p>
-        <h2>{chronicles.title}</h2>
+        <p className="eyebrow">Cronache</p>
+        <h2>Le Cronache di Ravenfall</h2>
 
         <p>
           La storia degli eventi accaduti a Ravenfall,
@@ -174,11 +197,10 @@ function Cronache() {
       </div>
 
       <div className="chronicles-layout">
-
         <aside className="chapter-index">
           <h3>Capitoli</h3>
 
-          {chronicles.chapters.map(chapter => (
+          {chapters.map(chapter => (
             <button
               key={chapter.id}
               className={
@@ -195,9 +217,7 @@ function Cronache() {
         </aside>
 
         <article className="chapter-book">
-
           <div className="chapter-header">
-
             <p className="chapter-number">
               Capitolo {selectedChapter.number}
             </p>
@@ -207,21 +227,15 @@ function Cronache() {
             <div className="chapter-meta">
               Narratore: {selectedChapter.narrator}
             </div>
-
           </div>
 
           <div className="chapter-content">
-            {selectedChapter.content.map((paragraph, index) => (
-              <p key={index}>
-                {paragraph}
-              </p>
-            ))}
+            <ReactMarkdown>
+              {selectedChapter.content}
+            </ReactMarkdown>
           </div>
-
         </article>
-
       </div>
-
     </section>
   )
 }
