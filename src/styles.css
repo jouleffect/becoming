@@ -1012,7 +1012,7 @@ footer { color: rgba(164,149,121,.66); text-align:center; padding: 30px; font: 1
 
 .chronicles-layout {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 75% 1fr;
   gap: 2rem;
 }
 
