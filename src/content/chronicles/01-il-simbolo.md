@@ -1,7 +1,3 @@
-# Giorno 1
-
-## Cronache di Ethan Crowley
-
 La pioggia aveva preso possesso di Ravenfall già dal pomeriggio, insinuandosi tra i tetti di ardesia, scivolando lungo le facciate annerite dal tempo e trasformando le strade in superfici lucide che restituivano ai lampioni una luce malata. A quell'ora la città non sembrava soltanto bagnata o malinconica; sembrava viva, raccolta in sé stessa, intenta a custodire un segreto troppo antico per essere pronunciato ad alta voce. Attraversai il quartiere universitario con il cappotto chiuso fino al collo e la sensazione, ormai familiare, che qualcosa mi stesse seguendo da una distanza impossibile da misurare.
 
 Da settimane il sonno non mi offriva riposo. Ogni notte precipitavo in sogni che al mattino lasciavano dietro di sé soltanto frammenti: corridoi stretti, volti sconosciuti, mani pallide posate contro vetri appannati, sussurri che si dissolvevano nel momento esatto in cui cercavo di comprenderli. Non erano incubi nel senso comune del termine, perché non contenevano mostri visibili né inseguimenti né cadute; erano piuttosto stanze chiuse della memoria, luoghi interiori in cui avevo la certezza di essere già stato senza riuscire a ricordare quando.
