@@ -1059,6 +1059,35 @@
       ]
     }
   ],
+  "master_rules": {
+    "chronicles": {
+      "enabled": true,
+      "format": "markdown",
+      "perspective": "first_person",
+      "allowed_narrators": [
+        "Ethan Crowley",
+        "Cassian Everhart"
+      ],
+      "strict_point_of_view": true,
+      "chapter_single_narrator": true,
+      "external_scenes_forbidden": true,
+      "omniscient_narration_forbidden": true,
+      "knowledge_limit": "only_what_the_narrator_knows",
+      "chronicles_written_after_events": true,
+      "narrator_may_describe_only": [
+        "what_he_sees",
+        "what_he_hears",
+        "what_he_thinks",
+        "what_he_remembers",
+        "what_he_deduces",
+        "what_he_dreams"
+      ]
+    },
+    "campaign_updates": {
+      "update_campaign_after_each_session": true,
+      "update_chronicles_after_each_session": true
+    }
+  }
   "narrator_private_notes": [
     "Non rivelare direttamente la vera natura di Ethan.",
     "Non spiegare la Frattura o il Velo ai giocatori.",
