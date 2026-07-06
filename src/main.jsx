@@ -195,25 +195,7 @@ function Cronache() {
         </p>
       </div>
 
-      <div className="chronicles-layout">
-        <aside className="chapter-index">
-          <h3>Capitoli</h3>
-
-          {chapters.map(chapter => (
-            <button
-              key={chapter.id}
-              className={
-                selectedChapter.id === chapter.id
-                  ? 'chapter-link active'
-                  : 'chapter-link'
-              }
-              onClick={() => setSelectedChapter(chapter)}
-            >
-              <span>Cap. {chapter.number} - </span>
-              <strong>{chapter.title}</strong>
-            </button>
-          ))}
-        </aside>
+      <div className="chronicles-layout">       
 
         <article className="chapter-book">
           <div className="chapter-header">
@@ -234,6 +216,24 @@ function Cronache() {
             </ReactMarkdown>
           </div>
         </article>
+        <aside className="chapter-index">
+          <h3>Capitoli</h3>
+
+          {chapters.map(chapter => (
+            <button
+              key={chapter.id}
+              className={
+                selectedChapter.id === chapter.id
+                  ? 'chapter-link active'
+                  : 'chapter-link'
+              }
+              onClick={() => setSelectedChapter(chapter)}
+            >
+              <span>Cap. {chapter.number} - </span>
+              <strong>{chapter.title}</strong>
+            </button>
+          ))}
+        </aside>
       </div>
     </section>
   )
