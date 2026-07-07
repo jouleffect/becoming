@@ -1,885 +1,231 @@
 {
   "campaign": {
     "name": "Becoming – Campagna I: La Nuova Razza",
-    "version": "1.1",
-    "current_session": 5,
+    "version": "1.2",
+    "current_session": 6,
     "started_at": null,
     "status": "active",
     "mode": "retroactive_save",
     "notes": [
       "Creato retroattivamente a partire dalla cronologia giocata prima dell'introduzione del sistema campaign.json.",
       "Aggiornato dopo la conclusione del Capitolo IV – Le Tracce di Mark.",
-      "Aggiornato dopo la Sessione 5 del Capitolo V – La Promessa."
+      "Aggiornato dopo la Sessione 5 del Capitolo V – La Promessa.",
+      "Aggiornato dopo la Sessione 6 – La Soglia Nascosta."
     ]
   },
   "session": {
-    "current_chapter": "Capitolo V – La Promessa",
-    "current_scene": "Strada notturna di Ravenfall dopo la fuga dalla casa di Cassian",
-    "last_scene": "Ethan ha raggiunto la casa di Cassian dopo un messaggio urgente. Ha trovato l'abitazione devastata, Cassian legato al piano superiore e nuovi documenti su Haven House. Attraverso una percezione anomala ha recuperato un frammento di memoria legato alla porta A-17, a Nolan e a una promessa fatta nell'infanzia. Uno sconosciuto collegato a Haven House è comparso nella casa, ma Ethan ha scelto di fuggire con Cassian.",
-    "resume_from": "Ethan e Cassian sono in strada, scossi dopo la fuga dalla casa di Cassian. Cassian ha compreso che Haven House non è un evento chiuso nel passato e che ciò che è accaduto nel 2001 sta ancora agendo su Ethan."
+    "current_chapter": "Capitolo VI – La Soglia Nascosta",
+    "current_scene": "Alba nell'appartamento di Ethan, prima della partenza verso il lago a nord-est di Ravenfall",
+    "last_scene": "Ethan, Cassian e Lydia hanno collegato Haven House, A-17, Doctor Nolan e Blackridge. Lydia resta nell'appartamento di Ethan mentre Ethan e Cassian partiranno all'alba per cercare Blackridge oltre il lago indicato da Mark.",
+    "resume_from": "All'alba Ethan e Cassian si preparano a partire verso il lago a nord-est di Ravenfall. Lydia resta nell'appartamento di Ethan in attesa di un possibile nuovo contatto da Mark."
   },
   "world_state": {
-    "supernatural_activity": "medium",
+    "supernatural_activity": "medium-high",
     "public_awareness": "low",
     "faction_tension": "medium",
     "becoming_level": "low",
-    "escalation_level": 2,
-    "escalation_name": "Convergenza",
+    "escalation_level": 3,
+    "escalation_name": "La Soglia",
     "notes": [
       "Ravenfall è attraversata da sparizioni, sogni condivisi e simboli misteriosi.",
       "Il sovrannaturale resta nascosto alla popolazione generale.",
       "Le anomalie iniziano a concentrarsi intorno a Ethan Crowley.",
-      "Le anomalie non si limitano più ai sogni: documenti e messaggi sembrano comparire in luoghi chiusi o sorvegliati.",
-      "La pista di Mark Hale conduce a Haven House, un luogo apparentemente cancellato dagli archivi ufficiali.",
+      "Le anomalie non si limitano più ai sogni: documenti, messaggi e immagini sembrano comparire o modificarsi in luoghi chiusi o sorvegliati.",
+      "La pista di Mark Hale conduce a Haven House, A-17, Doctor Nolan e al Vecchio Sanatorio Blackridge.",
       "Ethan possiede ora prove materiali che lo collegano a eventi avvenuti durante la sua infanzia.",
       "Gli eventi alla casa di Cassian indicano che Haven House continua ad agire nel presente.",
-      "Le manifestazioni legate ai ricordi di Ethan sembrano intensificarsi."
+      "Le manifestazioni legate ai ricordi di Ethan sembrano intensificarsi.",
+      "Qualcosa oltre A-17 ha percepito Ethan durante un uso fallito della Percezione dell'Osservatore.",
+      "Blackridge sembra essere un luogo cancellato, nascosto o non pienamente presente sulle mappe ordinarie."
     ]
   },
-  "locations": [
+  "active_conditions": [
     {
-      "id": "universita",
-      "discovered": true,
-      "discovery_order": 1,
-      "last_visit": "Capitolo IV – Le Tracce di Mark"
-    },
-    {
-      "id": "ethan-apartment",
-      "discovered": true,
-      "discovery_order": 2,
-      "last_visit": "Capitolo V – La Promessa"
-    },
-    {
-      "id": "cassian-house",
-      "discovered": true,
-      "discovery_order": 3,
-      "last_visit": "Capitolo V – La Promessa",
-      "notes": "Casa trovata devastata. Cassian è stato legato al piano superiore. Qui Ethan ha recuperato frammenti di memoria su Haven House, Nolan e la porta A-17."
-    },
-    {
-      "id": "the-black-finch",
-      "discovered": true,
-      "discovery_order": 4,
-      "last_visit": "Capitolo II – Eco Diurne"
-    },
-    {
-      "id": "quartiere-vecchio",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null
-    },
-    {
-      "id": "porto",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null
-    },
-    {
-      "id": "black-finch-district",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null
-    },
-    {
-      "id": "distretto-industriale",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null
-    },
-    {
-      "id": "black-hollow",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null
-    },
-    {
-      "id": "saint-mourne",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null
-    },
-    {
-      "id": "ospedale-greyward",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null
-    },
-    {
-      "id": "catacombe",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null
-    },
-    {
-      "id": "archivio-universitario-nascosto",
-      "discovered": true,
-      "discovery_order": 5,
-      "last_visit": "Capitolo IV – Le Tracce di Mark",
-      "notes": "Sala d'archivio in cui Ethan ha incontrato Adrian, Miriam e Jonah e ha trovato le tracce più concrete su Mark e Haven House."
-    },
-    {
-      "id": "haven-house",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null,
-      "notes": "Istituto legato all'infanzia di Ethan. La possibile posizione è nella periferia nord, oggi area industriale/magazzini. Non ancora visitato in gioco. Nuovi indizi indicano una porta A-17, un bambino chiamato Nolan e il Programma Speciale A.N."
-    },
-    {
-      "id": "periferia-nord-industriale",
-      "discovered": false,
-      "discovery_order": null,
-      "last_visit": null,
-      "notes": "Area moderna che potrebbe corrispondere alla posizione indicata dalla mappa nascosta di Haven House."
+      "character": "ethan_crowley",
+      "name": "Sguardo Ricambiato",
+      "description": "Qualcosa oltre A-17 ha percepito Ethan durante l'uso fallito della Percezione dell'Osservatore."
     }
   ],
-  "players": [
+  "locations_updates": [
+    {
+      "id": "ethan-apartment",
+      "last_visit": "Capitolo VI – La Soglia Nascosta",
+      "notes": "Rifugio temporaneo di Ethan, Cassian e Lydia dopo la fuga dalla casa di Cassian. Qui sono stati analizzati il foglio di Mark, la planimetria di A-17 e gli appunti su Blackridge."
+    },
+    {
+      "id": "vecchio-sanatorio-blackridge",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null,
+      "notes": "Luogo indicato dagli appunti di Mark Hale. Apparentemente collegato a Haven House, A-17, Doctor Nolan e alla Soglia. Secondo Mark, Blackridge non è sulla mappa."
+    },
+    {
+      "id": "lago-nord-est-ravenfall",
+      "discovered": false,
+      "discovery_order": null,
+      "last_visit": null,
+      "notes": "Area indicata da Mark Hale come riferimento per raggiungere Blackridge. Lydia ricorda che Mark parlava di un punto oltre il lago e usava la parola 'Soglia'."
+    }
+  ],
+  "players_updates": [
     {
       "id": "ethan_crowley",
-      "name": "Ethan Crowley",
-      "profession": "Investigatore privato",
-      "location": "Ravenfall",
-      "race_public": "Umano",
-      "race_real": "Mezzosangue",
-      "becoming_stage": 0,
-      "humanity": 100,
+      "current_location": "Appartamento di Ethan",
       "health": "shaken",
-      "current_location": "Strade di Ravenfall",
-      "health_points": 5,
-      "stress": 6,
-      "attributes": {
-        "istinto": 5,
-        "volonta": 4,
-        "influenza": 2,
-        "anomalia": 3
-      },
-      "powers": [
-        {
-          "name": "Sesto Senso Sovrannaturale",
-          "status": "latent",
-          "notes": "Percepisce presenze, anomalie e reazioni legate al simbolo."
-        },
-        {
-          "name": "Sogni Condivisi",
-          "status": "latent",
-          "notes": "Sogna volti sconosciuti, luoghi non riconosciuti e una fame anomala."
-        },
-        {
-          "name": "Percezione dell'Osservatore",
-          "status": "emerging",
-          "notes": "Durante gli eventi alla casa di Cassian, Ethan ha usato volontariamente una percezione anomala per entrare in contatto con un frammento di memoria legato a Nolan e alla porta A-17."
-        }
+      "stress": 7,
+      "conditions_added": [
+        "Sguardo Ricambiato",
+        "senso di protezione e calma percepito osservando Lydia"
       ],
-      "talents": [
-        "Investigatore",
-        "Sensitivo",
-        "Sopravvissuto"
-      ],
-      "mutations": [],
-      "conditions": [
-        "insonnia",
-        "dolori alla testa durante manifestazioni del simbolo",
-        "fame onirica anomala",
-        "frammenti di memoria recuperati su Haven House"
-      ],
-      "equipment": [
+      "equipment_added": [
         {
-          "id": "ethan_pendant",
-          "name": "Ciondolo di Ethan",
-          "description": "Ciondolo portato fin dall'infanzia. Ha forma di mezzo cerchio e reca sul retro una versione incompleta del simbolo del libro.",
+          "id": "a17_door_drawing",
+          "name": "Disegno della porta A-17",
+          "description": "Foglio portato da Lydia. Inizialmente bianco, ora mostra una porta con la scritta A-17 e la frase: 'NON LASCIATELO APRIRE.'",
           "status": "in_possession",
           "importance": "high"
         },
         {
-          "id": "mark_hale_notes_page",
-          "name": "Pagina degli appunti di Mark Hale",
-          "description": "Pagina trovata tramite Jonah: riporta il simbolo, il nome Ethan Crowley, riferimenti alla donna del sogno, all'uomo allo specchio e all'Archivio Nascosto.",
+          "id": "a17_hidden_floorplan",
+          "name": "Planimetria nascosta con A-17",
+          "description": "Planimetria emersa controluce dal foglio di Mark. Mostra una stanza o cella A-17 e la sigla HHC.",
           "status": "in_possession",
           "importance": "high"
         },
         {
-          "id": "haven_house_photo",
-          "name": "Fotografia di Haven House",
-          "description": "Fotografia ingiallita di Ethan bambino davanti a Haven House. Sul retro: 'Soggetto Ethan Crowley - Primo evento registrato.' Reca la sigla A.N.",
+          "id": "doctor_nolan_keeper_note",
+          "name": "Messaggio su Doctor Nolan",
+          "description": "Messaggio emerso sul retro del foglio: 'DOCTOR NOLAN. NON È MORTO. LUI È IL CUSTODE.'",
           "status": "in_possession",
           "importance": "high"
         },
         {
-          "id": "haven_house_map",
-          "name": "Mappa nascosta di Haven House",
-          "description": "Mappa nascosta dietro la fotografia. Indica Haven House, una data — 17 ottobre 2001 — e la nota: 'Se Haven House esiste ancora, cercare il custode.'",
+          "id": "blackridge_not_on_map_note",
+          "name": "Appunto su Blackridge",
+          "description": "Appunto di Mark Hale con la frase: 'Blackridge non è sulla mappa.'",
           "status": "in_possession",
           "importance": "high"
         },
         {
-          "id": "adrian_warning_note",
-          "name": "Nota contro Adrian",
-          "description": "Foglio apparso nell'archivio con la frase: 'NON FIDATEVI DI ADRIAN.' Origine sconosciuta.",
+          "id": "find_keeper_note",
+          "name": "Appunto sul Custode",
+          "description": "Appunto di Mark Hale con la frase: 'Trova il Custode prima che trovi te.'",
           "status": "in_possession",
-          "importance": "medium"
-        },
-        {
-          "id": "haven_house_transfer_record",
-          "name": "Documento trasferimenti Haven House",
-          "description": "Documento consultato alla casa di Cassian. Riporta Ethan Crowley come 'Trasferito' e Nolan come 'Non trasferito'.",
-          "status": "known",
           "importance": "high"
         }
       ],
-      "goals": [
-        "Scoprire la causa degli eventi anomali di Ravenfall",
-        "Capire perché il simbolo reagisce a lui",
-        "Scoprire cosa è accaduto a Mark Hale",
-        "Proteggere gli innocenti",
-        "Trovare Haven House",
-        "Scoprire chi è Nolan",
-        "Scoprire cosa c'era dietro la porta A-17",
-        "Capire chi ha cancellato i suoi ricordi"
-      ],
-      "notes": [
-        "Non conosce la propria vera natura.",
-        "Ha scelto di non rispondere alla Presenza nell'Archivio.",
-        "È apparentemente il centro dell'attenzione di una forza sovrannaturale sconosciuta.",
-        "Ha deciso di non rivelare ad Adrian, Miriam e Jonah l'intenzione di coinvolgere Cassian.",
-        "Ha scelto di lasciare l'archivio prima di indagare i rumori al piano superiore.",
-        "Ha liberato Cassian nella casa devastata.",
-        "Ha recuperato un frammento di memoria su Haven House, la porta A-17 e una promessa fatta a Nolan.",
-        "Ha scelto di fuggire dallo Sconosciuto di Haven House invece di fidarsi di lui."
+      "goals_added": [
+        "Raggiungere il lago a nord-est di Ravenfall",
+        "Trovare Blackridge",
+        "Capire perché Doctor Nolan è chiamato il Custode",
+        "Scoprire cosa significa A-17 come Sigillo",
+        "Capire perché Lydia sembra influenzare il suo stato emotivo"
       ]
     },
     {
       "id": "cassian_everhart",
-      "name": "Cassian Everhart",
-      "race_public": "Umano",
-      "race_real": "Umano",
-      "becoming_stage": 0,
-      "humanity": 100,
-      "health": "shaken",
-      "current_location": "Strade di Ravenfall con Ethan",
-      "powers": [],
-      "mutations": [],
-      "conditions": [
-        "ossessione crescente verso il simbolo e il mistero",
-        "shock dopo il rapimento e la fuga dalla propria casa"
+      "current_location": "Appartamento di Ethan",
+      "conditions_added": [
+        "maggiore consapevolezza della minaccia collegata ad A-17 e Blackridge"
       ],
-      "inventory": [
-        {
-          "id": "ancient_tome_grandfather",
-          "name": "Tomo antico del nonno di Cassian",
-          "description": "Volume contenente il simbolo sconosciuto che ha dato inizio all'indagine.",
-          "status": "under_study",
-          "importance": "high"
-        },
-        {
-          "id": "de_generatione_intermedia",
-          "name": "De Generatione Intermedia",
-          "subtitle": "Sulle stirpi che non dovevano esistere",
-          "description": "Volume trovato da Cassian. Contiene riferimenti a individui incompleti, stirpi intermedie e cambiamenti legati al sangue.",
-          "status": "under_study",
-          "importance": "high"
-        }
-      ],
-      "goals": [
-        "Studiare il simbolo",
-        "Comprendere il collegamento tra sogni, sparizioni e testi antichi",
-        "Proteggere Ethan e capire perché è coinvolto",
-        "Scoprire la vera natura dei cambiamenti di Ravenfall",
-        "Capire cosa è accaduto a Haven House"
-      ],
-      "notes": [
-        "Ha trascorso la notte nell'appartamento di Ethan dopo gli eventi dell'Archivio.",
-        "È preoccupato dalla parola 'fame' usata da Ethan.",
-        "Sta studiando il libro e i collegamenti storici.",
-        "È stato trovato legato al piano superiore della propria casa dopo il messaggio urgente inviato a Ethan.",
-        "Ha visto abbastanza da comprendere che Haven House non è un evento chiuso nel passato.",
-        "È sopravvissuto alla fuga dalla casa insieme a Ethan."
+      "goals_added": [
+        "Accompagnare Ethan al lago a nord-est di Ravenfall",
+        "Verificare l'esistenza di Blackridge",
+        "Collegare Haven House, A-17, Doctor Nolan e la Soglia"
       ]
     }
   ],
-  "relationships": [
-    {
-      "source": "ethan_crowley",
-      "target": "cassian_everhart",
-      "type": "amici",
-      "description": "Cassian è uno degli amici più vicini di Ethan e lo aiuta a interpretare ciò che sta accadendo. Dopo gli eventi alla casa di Cassian, il legame tra i due si rafforza ma entrambi sono più esposti al pericolo.",
-      "known": true
-    },
-    {
-      "source": "lydia_hale",
-      "target": "mark_hale",
-      "type": "fratelli",
-      "description": "Lydia è la sorella di Mark.",
-      "known": true
-    },
-    {
-      "source": "ethan_crowley",
-      "target": "lydia_hale",
-      "type": "conoscenza recente",
-      "description": "Ethan ha incontrato Lydia dopo il messaggio lasciato da Mark.",
-      "known": true
-    },
-    {
-      "source": "mark_hale",
-      "target": "ethan_crowley",
-      "type": "messaggio criptico",
-      "description": "Mark ha indicato Ethan come qualcuno che deve sapere.",
-      "known": true
-    },
-    {
-      "source": "presence",
-      "target": "ethan_crowley",
-      "type": "legame oscuro",
-      "description": "Una presenza sconosciuta sembra connessa ai sogni e alla fame anomala di Ethan.",
-      "known": true
-    },
-    {
-      "source": "ethan_crowley",
-      "target": "adrian",
-      "type": "fiducia fragile",
-      "description": "Ethan ha ottenuto informazioni da Adrian ma possiede anche una nota che lo invita a non fidarsi di lui.",
-      "known": true
-    },
-    {
-      "source": "ethan_crowley",
-      "target": "miriam",
-      "type": "alleanza incerta",
-      "description": "Miriam sembra conoscere A.N. e Haven House, ma resta reticente su parte delle informazioni.",
-      "known": true
-    },
-    {
-      "source": "ethan_crowley",
-      "target": "jonah",
-      "type": "alleanza incerta",
-      "description": "Jonah ha fornito la pagina degli appunti di Mark e ha rivelato casi precedenti simili.",
-      "known": true
-    },
-    {
-      "source": "mark_hale",
-      "target": "haven-house",
-      "type": "ultima pista",
-      "description": "Mark stava cercando Haven House e il suo possibile custode prima di sparire.",
-      "known": true
-    },
-    {
-      "source": "ethan_crowley",
-      "target": "haven-house",
-      "type": "legame d'infanzia",
-      "description": "Una fotografia mostra Ethan bambino davanti a Haven House, con la dicitura 'Primo evento registrato'. Ethan ha ora recuperato un frammento di memoria legato alla porta A-17 e a Nolan.",
-      "known": true
-    },
-    {
-      "source": "ethan_crowley",
-      "target": "nolan",
-      "type": "promessa dimenticata",
-      "description": "Nolan sembra conoscere Ethan dall'infanzia e sostiene che Ethan gli abbia promesso di tornare.",
-      "known": true
-    },
-    {
-      "source": "ethan_crowley",
-      "target": "haven_house_stranger",
-      "type": "conoscenza asimmetrica",
-      "description": "Lo Sconosciuto conosce Ethan, Haven House, Nolan, la porta A-17 e la cancellazione dei ricordi di Ethan. Ethan non sa chi sia.",
-      "known": true
-    }
-  ],
-  "factions": [
-    {
-      "id": "vampires",
-      "name": "Casate Vampiriche",
-      "status": "active",
-      "attitude": "unknown",
-      "current_goal": "Osservare il fenomeno dei Mezzosangue e le anomalie di Ravenfall",
-      "known_by_players": false,
-      "recent_activity": []
-    },
-    {
-      "id": "werewolves",
-      "name": "Branco Black Hollow",
-      "status": "active",
-      "attitude": "unknown",
-      "current_goal": "Difendere il territorio e percepire i cambiamenti nel sovrannaturale",
-      "known_by_players": false,
-      "recent_activity": []
-    },
-    {
-      "id": "witches",
-      "name": "Congrega delle Custodi",
-      "status": "active",
-      "attitude": "unknown",
-      "current_goal": "Comprendere il simbolo, i sogni e la natura del Becoming",
-      "known_by_players": false,
-      "recent_activity": []
-    },
-    {
-      "id": "hunters",
-      "name": "Ordine dell'Occhio del Sole",
-      "status": "active",
-      "attitude": "unknown",
-      "current_goal": "Monitorare le anomalie e le sparizioni",
-      "known_by_players": false,
-      "recent_activity": []
-    }
-  ],
-  "npcs": [
+  "npcs_updates": [
     {
       "id": "lydia_hale",
-      "name": "Lydia Hale",
-      "alive": true,
-      "type": "civilian",
-      "location": "The Black Finch",
-      "relationship": "unknown",
-      "attitude_toward_players": "desperate/cooperative",
-      "known_secrets": [],
-      "public_information": [
-        "È la sorella di Mark Hale.",
-        "Mark è scomparso da due giorni.",
-        "Ha sognato Mark, che le ha detto: 'Ethan Crowley deve sapere.'",
-        "Non conosceva Ethan prima della telefonata."
-      ],
-      "notes": [
-        "Il cognome Hale potrebbe essere rilevante ma non è ancora stato collegato esplicitamente ad altre figure."
+      "location": "Appartamento di Ethan",
+      "attitude_toward_players": "cooperative/trusting",
+      "public_information_added": [
+        "Ha portato a Ethan il foglio di Mark con il disegno della porta A-17.",
+        "Ha riconosciuto la voce di Mark durante una telefonata impossibile.",
+        "Ricorda che Mark indicava un punto oltre un lago a nord-est di Ravenfall.",
+        "Ricorda che Mark usava la parola 'Soglia' parlando di Blackridge.",
+        "Resterà nell'appartamento di Ethan mentre Ethan e Cassian partiranno all'alba."
       ]
     },
     {
       "id": "mark_hale",
-      "name": "Mark Hale",
       "alive": null,
-      "type": "missing_person",
+      "status_note": "Quasi certamente vivo o ancora capace di comunicare.",
+      "public_information_added": [
+        "Ha contattato Ethan tramite una telefonata da numero sconosciuto.",
+        "Ha detto che A-17 non è una stanza ma un Sigillo.",
+        "Ha detto che Ethan deve trovare il nome nascosto nella planimetria.",
+        "Ha avvertito Ethan dicendo che hanno poco tempo.",
+        "Ha gridato 'CORRI' prima dell'interruzione della chiamata."
+      ]
+    },
+    {
+      "id": "doctor_nolan",
+      "name": "Doctor Nolan",
+      "alive": true,
+      "type": "unknown/custodian",
       "location": "unknown",
-      "relationship": "unknown",
+      "relationship": "custode_di_a17",
       "attitude_toward_players": "unknown",
       "known_secrets": [],
       "public_information": [
-        "Fratello di Lydia Hale.",
-        "Scomparso da due giorni.",
-        "È apparso in sogno a Lydia pronunciando il nome di Ethan.",
-        "Stava indagando sul simbolo e sull'Archivio Nascosto.",
-        "Nei suoi appunti compare ripetutamente il nome di Ethan Crowley.",
-        "Aveva trovato o copiato una fotografia di Ethan bambino davanti a Haven House.",
-        "Stava cercando Haven House prima di scomparire."
+        "Secondo il messaggio emerso dal foglio di Mark, Doctor Nolan non è morto.",
+        "Secondo il messaggio, Doctor Nolan è il Custode.",
+        "Il nome Nolan è già collegato ai ricordi d'infanzia di Ethan, a Haven House e alla porta A-17."
       ],
       "notes": [
-        "Potrebbe essere collegato ai sogni condivisi, al simbolo o al Becoming.",
-        "La sua indagine conduce alla periferia nord e al possibile sito di Haven House.",
-        "La pagina dei suoi appunti è ora in possesso di Ethan."
-      ]
-    },
-    {
-      "id": "the_presence",
-      "name": "La Presenza",
-      "alive": null,
-      "type": "unknown_entity",
-      "location": "unknown",
-      "relationship": "watching_ethan",
-      "attitude_toward_players": "ambiguous",
-      "known_secrets": [],
-      "public_information": [
-        "Ha manifestato la propria voce nell'Archivio.",
-        "Ha dichiarato di non essere interessata a Cassian.",
-        "Ha osservato Ethan e gli ha detto che dovrà scegliere.",
-        "Ha affermato che il cambiamento non può essere completato senza consenso.",
-        "Prima di andarsene ha detto: 'Non oggi.'"
-      ],
-      "notes": [
-        "Non apertamente ostile.",
-        "Sembra rispettare o attendere il consenso di Ethan.",
-        "Identità sconosciuta."
-      ]
-    },
-    {
-      "id": "hooded_figure",
-      "name": "Figura Incappucciata",
-      "alive": null,
-      "type": "unknown",
-      "location": "unknown",
-      "relationship": "unknown",
-      "attitude_toward_players": "observing",
-      "known_secrets": [],
-      "public_information": [
-        "È apparsa nel cortile dell'Università nella nebbia.",
-        "Sembrava osservare direttamente Ethan.",
-        "Ha compiuto un gesto che richiama il simbolo.",
-        "È scomparsa nella nebbia."
-      ],
-      "notes": [
-        "Potrebbe essere collegata alla Presenza, al Testimone o a una fazione, ma non è confermato."
-      ]
-    },
-    {
-      "id": "adrian",
-      "name": "Adrian",
-      "alive": true,
-      "type": "investigator/occult_researcher",
-      "location": "Archivio universitario",
-      "relationship": "alleato incerto",
-      "attitude_toward_players": "guarded/cooperative",
-      "known_secrets": [],
-      "public_information": [
-        "Conosce il nome di Ethan.",
-        "Sostiene di cercare Mark Hale da tre settimane.",
-        "Ha incontrato Mark prima della scomparsa e lo descrive come terrorizzato.",
-        "Conosce il concetto di Archivio Nascosto come raccolta di documenti su persone scomparse.",
-        "Ha mostrato a Ethan la fotografia di Haven House trovata tra gli appunti di Mark."
-      ],
-      "notes": [
-        "Una nota apparsa misteriosamente nell'archivio avverte: 'NON FIDATEVI DI ADRIAN.'",
-        "Adrian sembra più spaventato dall'apparizione impossibile del foglio che dall'accusa contenuta nel messaggio."
-      ]
-    },
-    {
-      "id": "miriam",
-      "name": "Miriam",
-      "alive": true,
-      "type": "independent_investigator",
-      "location": "Archivio universitario",
-      "relationship": "alleata incerta",
-      "attitude_toward_players": "guarded/direct",
-      "known_secrets": [],
-      "public_information": [
-        "Conosce il nome di Ethan.",
-        "Sostiene che Adrian ometta metà della storia.",
-        "Ha riconosciuto la sigla A.N. come elemento ricorrente in documenti su persone osservate prima di eventi inspiegabili.",
-        "Conosce il nome Haven House come possibile leggenda o luogo cancellato."
-      ],
-      "notes": [
-        "È reticente ma meno evasiva quando Ethan pretende risposte concrete.",
-        "Ha suggerito implicitamente che Haven House sia più di una semplice pista storica."
-      ]
-    },
-    {
-      "id": "jonah",
-      "name": "Jonah",
-      "alive": true,
-      "type": "older_investigator",
-      "location": "Archivio universitario",
-      "relationship": "alleato incerto",
-      "attitude_toward_players": "direct/suspicious",
-      "known_secrets": [],
-      "public_information": [
-        "Uomo anziano dai capelli grigi e cappotto scuro.",
-        "Ha portato una pagina degli appunti di Mark Hale.",
-        "Conosce casi precedenti di persone scomparse dopo aver iniziato a scrivere nomi di sconosciuti.",
-        "Ha citato il caso di Claire Morton, scomparsa tre anni prima.",
-        "Ha aperto il secondo strato della fotografia rivelando la mappa di Haven House."
-      ],
-      "notes": [
-        "Spinge verso risposte più dirette, ma non rivela tutto ciò che sa.",
-        "Ha riconosciuto la natura ricorrente del fenomeno senza possederne una spiegazione completa."
-      ]
-    },
-    {
-      "id": "claire_morton",
-      "name": "Claire Morton",
-      "alive": null,
-      "type": "missing_person",
-      "location": "unknown",
-      "relationship": "precedent_case",
-      "attitude_toward_players": "unknown",
-      "known_secrets": [],
-      "public_information": [
-        "Studentessa di ventitré anni scomparsa tre anni prima.",
-        "Prima di sparire aveva riempito quattro quaderni con nomi di persone che non avrebbe dovuto conoscere."
-      ],
-      "notes": [
-        "Caso precedente citato da Jonah come pattern simile alla vicenda di Mark Hale."
-      ]
-    },
-    {
-      "id": "nolan",
-      "name": "Nolan",
-      "alive": null,
-      "type": "unknown_child",
-      "location": "unknown",
-      "relationship": "linked_to_ethan_childhood",
-      "attitude_toward_players": "sad/ambiguous",
-      "known_secrets": [],
-      "public_information": [
-        "Appare come il bambino collegato alla fotografia di Haven House.",
-        "Conosce Ethan.",
-        "Sostiene che Ethan gli abbia promesso di tornare.",
-        "Avverte Ethan di non fidarsi dello Sconosciuto di Haven House."
-      ],
-      "notes": [
-        "È collegato alla porta A-17.",
-        "Non è stato trasferito secondo un documento di Haven House.",
-        "Potrebbe essere una presenza, un ricordo, un sopravvissuto o qualcosa rimasto legato a Haven House."
-      ]
-    },
-    {
-      "id": "haven_house_stranger",
-      "name": "Lo Sconosciuto di Haven House",
-      "alive": true,
-      "type": "unknown",
-      "location": "unknown",
-      "relationship": "knows_ethan",
-      "attitude_toward_players": "ambiguous/threatening",
-      "known_secrets": [],
-      "public_information": [
-        "Conosce Haven House.",
-        "Conosce la porta A-17.",
-        "Conosce Nolan.",
-        "Afferma che i ricordi di Ethan sono stati cancellati.",
-        "Dice di voler far sopravvivere Ethan.",
-        "Sembra sapere cosa accadde nel 2001."
-      ],
-      "notes": [
-        "Nolan avverte Ethan di non fidarsi di lui.",
-        "Sembra temere una presenza ancora più pericolosa comparsa durante la fuga.",
-        "Non è confermato se sia un custode, un agente di A.N., un sopravvissuto o un antagonista."
+        "Non è ancora chiaro se Doctor Nolan e il Nolan bambino del ricordo siano la stessa persona, due identità collegate o una distorsione prodotta da Haven House/A-17.",
+        "Il ruolo di Custode non è ancora compreso."
       ]
     }
   ],
-  "mysteries": [
+  "new_clues": [
     {
-      "id": "symbol_of_witness",
-      "name": "Il Simbolo",
-      "status": "active",
-      "progress": 40,
-      "clues_found": [
-        "clue_symbol_recurrence",
-        "clue_ethan_pendant_symbol",
-        "clue_hooded_figure_gesture",
-        "clue_mark_hidden_archive_notes"
-      ],
-      "questions": [
-        "Cos'è realmente il simbolo?",
-        "Perché compare nei sogni, nei libri, in città e sul ciondolo di Ethan?",
-        "Il simbolo è un avvertimento, una chiave o un marchio?"
-      ]
-    },
-    {
-      "id": "mark_hale_disappearance",
-      "name": "La Scomparsa di Mark Hale",
-      "status": "active",
-      "progress": 45,
-      "clues_found": [
-        "clue_mark_message_to_lydia",
-        "clue_mark_hidden_archive_notes",
-        "clue_haven_house_photo",
-        "clue_haven_house_map",
-        "clue_haven_house_date"
-      ],
-      "questions": [
-        "Che fine ha fatto Mark Hale?",
-        "Come conosce il nome di Ethan?",
-        "Perché ha contattato Lydia attraverso un sogno?",
-        "Perché Mark cercava Haven House?",
-        "Mark ha trovato il custode prima di sparire?",
-        "Chi o cosa lo ha fatto scomparire?"
-      ]
-    },
-    {
-      "id": "ethan_hunger",
-      "name": "La Fame nei Sogni",
-      "status": "active",
-      "progress": 15,
-      "clues_found": [
-        "clue_ethan_dream_hunger"
-      ],
-      "questions": [
-        "Qual è il significato della fame nei sogni di Ethan?",
-        "È collegata alla sua natura nascosta?",
-        "La fame è un sintomo del Becoming o qualcosa di diverso?"
-      ]
-    },
-    {
-      "id": "de_generatione_intermedia",
-      "name": "De Generatione Intermedia",
-      "status": "active",
-      "progress": 20,
-      "clues_found": [
-        "clue_de_generatione_intermedia"
-      ],
-      "questions": [
-        "Cosa contiene realmente il libro?",
-        "Chi ha scritto il testo?",
-        "A quali stirpi intermedie si riferisce?"
-      ]
-    },
-    {
-      "id": "the_presence_identity",
-      "name": "La Presenza nell'Archivio",
-      "status": "active",
-      "progress": 10,
-      "clues_found": [
-        "clue_presence_targets_ethan"
-      ],
-      "questions": [
-        "Chi o cosa era la Presenza?",
-        "Perché non era interessata a Cassian?",
-        "Perché parla di scelta e consenso?"
-      ]
-    },
-    {
-      "id": "haven_house",
-      "name": "Haven House",
-      "status": "active",
-      "progress": 60,
-      "clues_found": [
-        "clue_haven_house_photo",
-        "clue_haven_house_map",
-        "clue_haven_house_date",
-        "clue_haven_house_keeper_note",
-        "clue_haven_house_program_an",
-        "clue_a17_memory_fragment",
-        "clue_nolan_identity",
-        "clue_haven_house_transfer_record"
-      ],
-      "questions": [
-        "Cos'era realmente Haven House?",
-        "Perché i documenti ufficiali sembrano cancellati?",
-        "Perché Ethan bambino era stato fotografato lì?",
-        "Cosa accadde il 17 ottobre 2001?",
-        "Chi è il custode?",
-        "Cosa c'era dietro la porta A-17?",
-        "Chi è Nolan?",
-        "Perché Ethan è stato trasferito e Nolan no?",
-        "Chi ha cancellato i ricordi di Ethan?"
-      ]
-    },
-    {
-      "id": "a_n_signature",
-      "name": "La sigla A.N.",
-      "status": "active",
-      "progress": 35,
-      "clues_found": [
-        "clue_an_signature",
-        "clue_haven_house_program_an"
-      ],
-      "questions": [
-        "Cosa significa A.N.?",
-        "Chi osservava le persone indicate nei vecchi dossier?",
-        "A.N. è un'organizzazione, una persona o una classificazione?",
-        "Cos'era il Programma Speciale A.N.?"
-      ]
-    },
-    {
-      "id": "hidden_archive",
-      "name": "L'Archivio Nascosto",
-      "status": "active",
-      "progress": 25,
-      "clues_found": [
-        "clue_mark_hidden_archive_notes",
-        "clue_hidden_archive_definition"
-      ],
-      "questions": [
-        "Cos'è davvero l'Archivio Nascosto?",
-        "Chi raccoglie documenti sulle persone scomparse?",
-        "Quale connessione esiste tra Archivio Nascosto, A.N. e Haven House?"
-      ]
-    },
-    {
-      "id": "nolan_identity",
-      "name": "Nolan",
-      "status": "active",
-      "progress": 20,
-      "clues_found": [
-        "clue_nolan_identity",
-        "clue_nolan_promise",
-        "clue_haven_house_transfer_record"
-      ],
-      "questions": [
-        "Chi è Nolan?",
-        "Perché Ethan gli aveva promesso di tornare?",
-        "Perché Nolan non è stato trasferito?",
-        "Nolan è vivo, morto, imprigionato o qualcosa di diverso?"
-      ]
-    },
-    {
-      "id": "a17_door",
-      "name": "La porta A-17",
-      "status": "active",
-      "progress": 15,
-      "clues_found": [
-        "clue_a17_memory_fragment"
-      ],
-      "questions": [
-        "Cosa c'era dietro la porta A-17?",
-        "Perché il ricordo di A-17 è stato cancellato?",
-        "Che legame ha A-17 con Ethan e Nolan?"
-      ]
-    },
-    {
-      "id": "haven_house_stranger_identity",
-      "name": "Lo Sconosciuto di Haven House",
-      "status": "active",
-      "progress": 10,
-      "clues_found": [
-        "clue_haven_house_stranger_knows_ethan"
-      ],
-      "questions": [
-        "Chi è lo Sconosciuto?",
-        "Perché conosce Ethan?",
-        "Perché dice di volerlo far sopravvivere?",
-        "Perché Nolan dice di non fidarsi di lui?",
-        "È collegato al custode, ad A.N. o a Haven House?"
-      ]
-    }
-  ],
-  "clues": [
-    {
-      "id": "clue_symbol_recurrence",
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "type": "symbol",
-      "description": "Il simbolo compare nei libri antichi, nei sogni di alcuni studenti, sui muri della città e nei casi di sparizione.",
-      "location_found": "Archivio dell'Università",
+      "id": "clue_a17_door_drawing",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "anomalous_drawing",
+      "description": "Lydia porta a Ethan un foglio che il giorno prima era bianco. Sul foglio compare il disegno di una porta con la scritta A-17.",
+      "location_found": "Appartamento di Ethan",
       "discovered_by": [
         "ethan_crowley",
-        "cassian_everhart"
+        "cassian_everhart",
+        "lydia_hale"
       ]
     },
     {
-      "id": "clue_hooded_figure_gesture",
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "type": "vision/encounter",
-      "description": "Una figura incappucciata osserva Ethan dal cortile dell'Università e compie un gesto che richiama il simbolo.",
-      "location_found": "Università di Ravenfall",
-      "discovered_by": [
-        "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_ethan_pendant_symbol",
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "type": "object",
-      "description": "Il ciondolo di Ethan ha forma di mezzo cerchio e reca sul retro lo stesso simbolo del libro, ma incompleto. Quando Ethan lo separa dal collo, il dolore diminuisce e alcuni fenomeni cessano.",
-      "location_found": "Archivio dell'Università",
+      "id": "clue_do_not_open_a17",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "warning",
+      "description": "Sul foglio della porta A-17 compare la frase: 'NON LASCIATELO APRIRE.'",
+      "location_found": "Appartamento di Ethan",
       "discovered_by": [
         "ethan_crowley",
-        "cassian_everhart"
+        "cassian_everhart",
+        "lydia_hale"
       ]
     },
     {
-      "id": "clue_de_generatione_intermedia",
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "type": "book",
-      "description": "Cassian trova il volume 'De Generatione Intermedia – Sulle stirpi che non dovevano esistere', contenente riferimenti a individui incompleti e a un cambiamento legato al sangue.",
-      "location_found": "Archivio dell'Università",
-      "discovered_by": [
-        "cassian_everhart"
-      ]
-    },
-    {
-      "id": "clue_presence_targets_ethan",
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "type": "entity_statement",
-      "description": "La Presenza dichiara di non essere interessata a Cassian, osserva Ethan, parla di scelta e afferma che il cambiamento non può essere completato senza consenso.",
-      "location_found": "Archivio dell'Università",
+      "id": "clue_a17_hidden_floorplan",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "hidden_map",
+      "description": "Controluce e tramite analisi fotografica emerge una planimetria nascosta. A-17 non sembra indicare solo una porta, ma una stanza o cella isolata in fondo a un corridoio.",
+      "location_found": "Appartamento di Ethan",
       "discovered_by": [
         "ethan_crowley",
-        "cassian_everhart"
+        "cassian_everhart",
+        "lydia_hale"
       ]
     },
     {
-      "id": "clue_ethan_dream_hunger",
-      "session": 2,
-      "chapter": "Capitolo II – Eco Diurne",
-      "type": "dream",
-      "description": "Ethan racconta di sognare volti sconosciuti, luoghi ignoti e una fame intensa e anomala. Non rivela però che il simbolo appare spesso nei suoi sogni.",
+      "id": "clue_hhc_signature",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "marking",
+      "description": "In basso a destra della planimetria nascosta compare la sigla HHC.",
       "location_found": "Appartamento di Ethan",
       "discovered_by": [
         "ethan_crowley",
@@ -887,535 +233,307 @@
       ]
     },
     {
-      "id": "clue_mark_message_to_lydia",
-      "session": 2,
-      "chapter": "Capitolo II – Eco Diurne",
-      "type": "dream_message",
-      "description": "Lydia Hale sogna il fratello scomparso Mark, che le dice: 'Ethan Crowley deve sapere.' Lydia non conosceva Ethan.",
-      "location_found": "The Black Finch",
+      "id": "clue_mark_phone_call",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "anomalous_call",
+      "description": "Ethan riceve una telefonata da numero sconosciuto. La voce sembra appartenere a Mark Hale. Lydia la riconosce.",
+      "location_found": "Appartamento di Ethan",
       "discovered_by": [
-        "ethan_crowley"
+        "ethan_crowley",
+        "cassian_everhart",
+        "lydia_hale"
       ]
     },
     {
-      "id": "clue_mark_hidden_archive_notes",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "type": "document",
-      "description": "Una pagina degli appunti di Mark riporta: il simbolo ricorrente, 'Lydia dice che sono soltanto sogni', il nome ETHAN CROWLEY, la donna del sogno, l'uomo allo specchio con il suo volto e la frase 'SE TROVO L'ARCHIVIO NASCOSTO TROVERÒ LE RISPOSTE'. La pagina è datata tre giorni prima della scomparsa di Mark.",
-      "location_found": "Archivio universitario",
+      "id": "clue_a17_is_seal",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "revelation",
+      "description": "Durante la telefonata, Mark dice che A-17 non è una stanza ma un Sigillo.",
+      "location_found": "Appartamento di Ethan",
       "discovered_by": [
-        "ethan_crowley"
+        "ethan_crowley",
+        "cassian_everhart",
+        "lydia_hale"
       ]
     },
     {
-      "id": "clue_hidden_archive_definition",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
+      "id": "clue_doctor_nolan_keeper",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "hidden_message",
+      "description": "Sul retro della planimetria emerge il messaggio: 'DOCTOR NOLAN. NON È MORTO. LUI È IL CUSTODE.'",
+      "location_found": "Appartamento di Ethan",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart",
+        "lydia_hale"
+      ]
+    },
+    {
+      "id": "clue_blackridge_sanatorium",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "location",
+      "description": "Tra gli appunti di Mark compare il riferimento al Vecchio Sanatorio Blackridge.",
+      "location_found": "Appartamento di Ethan",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart",
+        "lydia_hale"
+      ]
+    },
+    {
+      "id": "clue_blackridge_not_on_map",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "warning",
+      "description": "Un appunto di Mark recita: 'Blackridge non è sulla mappa.'",
+      "location_found": "Appartamento di Ethan",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart",
+        "lydia_hale"
+      ]
+    },
+    {
+      "id": "clue_blackridge_lake_threshold",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
       "type": "testimony",
-      "description": "Adrian e Miriam descrivono l'Archivio Nascosto come una raccolta di documenti relativi a persone scomparse e connessioni inspiegabili, non come un semplice luogo fisico.",
-      "location_found": "Archivio universitario",
-      "discovered_by": [
-        "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_adrian_warning_note",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "type": "anomalous_note",
-      "description": "Durante un blackout brevissimo appare sul tavolo un foglio con la frase: 'NON FIDATEVI DI ADRIAN.' Nessuno dei presenti sembra averlo posato.",
-      "location_found": "Archivio universitario",
+      "description": "Lydia ricorda che Mark indicava un punto oltre un lago a nord-est di Ravenfall e usava la parola 'Soglia'.",
+      "location_found": "Appartamento di Ethan",
       "discovered_by": [
         "ethan_crowley",
-        "adrian",
-        "miriam",
-        "jonah"
+        "cassian_everhart",
+        "lydia_hale"
       ]
     },
     {
-      "id": "clue_previous_cases_claire_morton",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "type": "testimony",
-      "description": "Jonah cita Claire Morton, studentessa di ventitré anni scomparsa tre anni prima dopo aver riempito quaderni con nomi di persone che non avrebbe dovuto conoscere.",
-      "location_found": "Archivio universitario",
+      "id": "clue_lydia_calming_effect",
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "type": "emotional_anomaly",
+      "description": "Ethan percepisce un improvviso senso di calma, benessere e protezione guardando Lydia, come se la sua presenza attenuasse temporaneamente paura e turbamento.",
+      "location_found": "Appartamento di Ethan",
       "discovered_by": [
         "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_haven_house_photo",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "type": "photograph",
-      "description": "Fotografia ingiallita di Ethan bambino davanti a un edificio chiamato Haven House. Sul retro compare la scritta 'Soggetto Ethan Crowley - Primo evento registrato.'",
-      "location_found": "Archivio universitario",
-      "discovered_by": [
-        "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_an_signature",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "type": "marking",
-      "description": "Sul retro della fotografia compare la sigla A.N. Miriam la collega a documenti più vecchi su persone osservate prima di eventi inspiegabili.",
-      "location_found": "Archivio universitario",
-      "discovered_by": [
-        "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_haven_house_map",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "type": "map",
-      "description": "Un secondo strato nascosto nella fotografia contiene una mappa della città con Haven House cerchiata. L'allineamento suggerisce una zona nella periferia nord oggi industriale.",
-      "location_found": "Archivio universitario",
-      "discovered_by": [
-        "ethan_crowley",
-        "jonah"
-      ]
-    },
-    {
-      "id": "clue_haven_house_date",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "type": "date",
-      "description": "Sulla mappa nascosta compare la data 17 ottobre 2001, apparentemente collegata a Haven House, alla fotografia o al primo evento registrato relativo a Ethan.",
-      "location_found": "Archivio universitario",
-      "discovered_by": [
-        "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_haven_house_keeper_note",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "type": "note",
-      "description": "Sotto la data sulla mappa compare la frase: 'Se Haven House esiste ancora, cercare il custode.'",
-      "location_found": "Archivio universitario",
-      "discovered_by": [
-        "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_archive_upper_floor_presence",
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "type": "unresolved_event",
-      "description": "Rumori metallici, scricchiolii e un possibile scatto di serratura provengono dal piano superiore dell'archivio. Ethan sceglie di non indagare e lascia il luogo.",
-      "location_found": "Archivio universitario",
-      "discovered_by": [
-        "ethan_crowley",
-        "adrian",
-        "miriam",
-        "jonah"
-      ]
-    },
-    {
-      "id": "clue_haven_house_program_an",
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "type": "document",
-      "description": "Nel materiale consultato alla casa di Cassian emerge il riferimento al Programma Speciale A.N., collegato a Haven House e agli eventi del 17 ottobre 2001.",
-      "location_found": "Casa di Cassian",
-      "discovered_by": [
-        "ethan_crowley",
-        "cassian_everhart"
-      ]
-    },
-    {
-      "id": "clue_a17_memory_fragment",
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "type": "memory_fragment",
-      "description": "Ethan recupera un frammento di memoria: Haven House, la porta A-17, una donna sconosciuta che gli dice che deve dimenticare, un altro bambino che non può dimenticare e una promessa di tornare.",
-      "location_found": "Casa di Cassian",
-      "discovered_by": [
-        "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_nolan_identity",
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "type": "identity",
-      "description": "Il bambino collegato alla fotografia e al frammento di memoria viene identificato come Nolan.",
-      "location_found": "Casa di Cassian",
-      "discovered_by": [
-        "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_nolan_promise",
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "type": "memory/promise",
-      "description": "Ethan ricorda o percepisce di aver promesso a Nolan che sarebbe tornato.",
-      "location_found": "Casa di Cassian",
-      "discovered_by": [
-        "ethan_crowley"
-      ]
-    },
-    {
-      "id": "clue_haven_house_transfer_record",
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "type": "document",
-      "description": "Un documento indica Ethan Crowley come 'Trasferito' e Nolan come 'Non trasferito'.",
-      "location_found": "Casa di Cassian",
-      "discovered_by": [
-        "ethan_crowley",
-        "cassian_everhart"
-      ]
-    },
-    {
-      "id": "clue_haven_house_stranger_knows_ethan",
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "type": "encounter",
-      "description": "Uno sconosciuto entra nella casa di Cassian e dimostra di conoscere Ethan, Haven House, la porta A-17, Nolan e la cancellazione dei ricordi di Ethan. Afferma di volerlo far sopravvivere.",
-      "location_found": "Casa di Cassian",
-      "discovered_by": [
-        "ethan_crowley",
-        "cassian_everhart"
-      ]
-    },
-    {
-      "id": "clue_unknown_greater_presence",
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "type": "manifestation",
-      "description": "Durante la fuga dalla casa di Cassian, sembra manifestarsi una presenza ancora più spaventosa, capace di intimorire lo Sconosciuto di Haven House.",
-      "location_found": "Casa di Cassian",
-      "discovered_by": [
-        "ethan_crowley",
-        "cassian_everhart"
       ]
     }
   ],
-  "open_threads": [
-    "Cos'è realmente il simbolo?",
-    "Chi era la Presenza nell'Archivio?",
-    "Perché il ciondolo di Ethan reagisce al simbolo?",
-    "Che fine ha fatto Mark Hale?",
-    "Come fa Mark Hale a conoscere il nome di Ethan?",
-    "Qual è il significato della fame nei sogni?",
-    "Perché Ethan è al centro di questi eventi?",
-    "Cosa contiene realmente il libro De Generatione Intermedia?",
-    "Chi era la figura incappucciata nel cortile dell'Università?",
-    "Perché la Presenza parla di scelta e consenso?",
-    "Cos'era realmente Haven House?",
-    "Cosa accadde il 17 ottobre 2001?",
-    "Chi è il custode indicato dalla nota?",
-    "Cosa significa la sigla A.N.?",
-    "Chi ha fotografato Ethan bambino?",
-    "Chi era la figura nascosta nell'ombra della fotografia?",
-    "Perché Mark stava cercando Ethan?",
-    "Perché una nota avverte di non fidarsi di Adrian?",
-    "Chi o cosa si trovava al piano superiore dell'archivio?",
-    "Chi è Nolan?",
-    "Cosa c'era dietro la porta A-17?",
-    "Perché Ethan è stato trasferito?",
-    "Perché Nolan non è stato trasferito?",
-    "Chi ha cancellato i ricordi di Ethan?",
-    "Chi è lo Sconosciuto di Haven House?",
-    "Cos'era il Programma Speciale A.N.?",
-    "Quale presenza ha spaventato lo Sconosciuto durante la fuga?"
-  ],
-  "event_log": [
+  "mysteries_updates": [
     {
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "title": "L'incontro all'Università",
-      "description": "Cassian contatta Ethan per mostrargli un antico tomo appartenuto a suo nonno. Nel libro compare un simbolo sconosciuto collegato a sogni, sparizioni e segni apparsi in città.",
-      "consequences": [
-        "Ethan viene coinvolto direttamente nell'indagine.",
-        "Il simbolo diventa il primo mistero centrale."
-      ]
-    },
-    {
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "title": "La figura nel cortile",
-      "description": "Un rumore attira Ethan verso la finestra. Nel cortile vede una figura incappucciata immersa nella nebbia, che lo osserva e compie un gesto legato al simbolo.",
-      "consequences": [
-        "Ethan subisce un forte dolore alla testa.",
-        "La presenza del simbolo sembra reagire direttamente a lui."
-      ]
-    },
-    {
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "title": "La stanza si chiude",
-      "description": "La porta dell'Archivio si blocca. Ethan percepisce voci indistinte, parole frammentate e una presenza rivolta a lui.",
-      "consequences": [
-        "La situazione assume una natura apertamente sovrannaturale.",
-        "Cassian tenta di decifrare il simbolo attraverso il libro."
-      ]
-    },
-    {
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "title": "Il ciondolo reagisce",
-      "description": "Ethan strappa dal collo il ciondolo che porta dall'infanzia e scopre che reca una versione incompleta del simbolo. Separarlo dal collo riduce il dolore e modifica i fenomeni nella stanza.",
-      "consequences": [
-        "Il ciondolo diventa un oggetto chiave.",
-        "Ethan comprende di essere collegato al mistero più di quanto immaginasse."
-      ]
-    },
-    {
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "title": "De Generatione Intermedia",
-      "description": "Cassian trova un volume intitolato 'De Generatione Intermedia – Sulle stirpi che non dovevano esistere', contenente frasi su individui incompleti e cambiamenti legati al sangue.",
-      "consequences": [
-        "Si apre una pista legata al sangue e a stirpi impossibili.",
-        "Cassian ottiene un nuovo testo da studiare."
-      ]
-    },
-    {
-      "session": 1,
-      "chapter": "Capitolo I – Il Simbolo",
-      "title": "La Presenza",
-      "description": "Una voce senza identità parla a Ethan e Cassian. Dice di non essere interessata a Cassian, osserva Ethan, parla di scelta e afferma che il cambiamento non può essere completato senza consenso. Ethan resta in silenzio. La Presenza accetta e conclude: 'Non oggi.'",
-      "consequences": [
-        "La minaccia non scompare, ma decide di attendere.",
-        "Ethan viene riconosciuto come individuo importante da una forza sconosciuta."
-      ]
-    },
-    {
-      "session": 2,
-      "chapter": "Capitolo II – Eco Diurne",
-      "title": "La mattina dopo",
-      "description": "Cassian trascorre la notte nell'appartamento di Ethan per prudenza e per continuare a studiare il libro. Ethan era debilitato dagli eventi dell'Archivio.",
-      "consequences": [
-        "La fiducia tra Ethan e Cassian aumenta.",
-        "Cassian continua a indagare sul simbolo."
-      ]
-    },
-    {
-      "session": 2,
-      "chapter": "Capitolo II – Eco Diurne",
-      "title": "La fame nei sogni",
-      "description": "Ethan rivela a Cassian di sognare volti sconosciuti, luoghi ignoti e una fame intensa e anomala. Non gli racconta che il simbolo appare spesso nei sogni.",
-      "consequences": [
-        "Cassian si preoccupa della parola 'fame'.",
-        "La fame diventa una nuova traccia investigativa."
-      ]
-    },
-    {
-      "session": 2,
-      "chapter": "Capitolo II – Eco Diurne",
-      "title": "La telefonata di Lydia Hale",
-      "description": "Ethan riceve una chiamata da Lydia Hale, il cui fratello Mark è scomparso da due giorni. Lydia racconta di aver sognato Mark, che le ha detto: 'Ethan Crowley deve sapere.'",
-      "consequences": [
-        "La scomparsa di Mark Hale diventa un nuovo mistero attivo.",
-        "Il nome di Ethan appare in un sogno di una sconosciuta."
-      ]
-    },
-    {
-      "session": 2,
-      "chapter": "Capitolo II – Eco Diurne",
-      "title": "Incontro al Black Finch",
-      "description": "Ethan incontra Lydia Hale al bar The Black Finch. Lydia ripete il messaggio ricevuto in sogno: 'Mark mi ha detto: Ethan Crowley deve sapere.'",
-      "consequences": [
-        "La scena resta aperta.",
-        "Ethan deve decidere come reagire e quale pista seguire."
-      ]
-    },
-    {
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "title": "Incontro nell'archivio universitario",
-      "description": "Ethan entra nell'archivio seguendo la pista di Mark e incontra Adrian, Miriam e Jonah, tre figure che conoscono il suo nome e seguono la stessa vicenda da prospettive diverse.",
-      "consequences": [
-        "Ethan scopre di non essere l'unico a indagare sulla scomparsa di Mark.",
-        "Adrian, Miriam e Jonah diventano alleati incerti e potenziali fonti di informazione."
-      ]
-    },
-    {
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "title": "La pagina di Mark",
-      "description": "Jonah consegna a Ethan una pagina degli appunti di Mark Hale. La pagina collega il simbolo, Lydia, Ethan Crowley, una donna del sogno, un uomo allo specchio e l'Archivio Nascosto.",
-      "consequences": [
-        "Il nome di Ethan risulta presente negli appunti di Mark prima del loro incontro.",
-        "L'Archivio Nascosto diventa una pista centrale."
-      ]
-    },
-    {
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "title": "Risposte concrete",
-      "description": "Ethan pretende spiegazioni meno vaghe. Jonah rivela casi precedenti, tra cui Claire Morton, e il gruppo definisce la situazione: Mark indagava un fenomeno ignoto e tutte le piste stanno convergendo su Ethan.",
-      "consequences": [
-        "La scomparsa di Mark viene collegata a un pattern più ampio.",
-        "Ethan comprende che Adrian, Miriam e Jonah non sono un gruppo unico, ma persone finite sulla stessa pista."
-      ]
-    },
-    {
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "title": "La fotografia di Haven House",
-      "description": "Adrian mostra una fotografia trovata tra gli appunti di Mark: Ethan bambino davanti a Haven House, con la dicitura 'Soggetto Ethan Crowley - Primo evento registrato' e la sigla A.N.",
-      "consequences": [
-        "Haven House diventa una pista concreta legata all'infanzia di Ethan.",
-        "La sigla A.N. entra tra i misteri attivi."
-      ]
-    },
-    {
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "title": "La mappa nascosta",
-      "description": "Jonah apre un secondo strato nascosto nella fotografia e rivela una mappa della città. La mappa indica Haven House, la data 17 ottobre 2001 e la nota: 'Se Haven House esiste ancora, cercare il custode.'",
-      "consequences": [
-        "Ethan ottiene una possibile destinazione nella periferia nord.",
-        "La data 17 ottobre 2001 e il custode diventano nuove piste verificabili."
-      ]
-    },
-    {
-      "session": 4,
-      "chapter": "Capitolo IV – Le Tracce di Mark",
-      "title": "Uscita dall'archivio",
-      "description": "Dopo rumori inspiegabili al piano superiore e l'apparizione di una nota contro Adrian, Ethan decide di lasciare l'archivio portando con sé foto, mappa e appunti. Non rivela agli altri l'intenzione di contattare Cassian.",
-      "consequences": [
-        "Ethan mantiene il controllo delle prove materiali.",
-        "Il piano superiore dell'archivio resta un pericolo o mistero irrisolto.",
-        "Il prossimo passo sarà coinvolgere Cassian."
-      ]
-    },
-    {
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "title": "Il messaggio di Cassian",
-      "description": "Ethan riceve un messaggio urgente da Cassian legato a Haven House e decide di raggiungerlo immediatamente.",
-      "consequences": [
-        "Ethan lascia il proprio appartamento.",
-        "La scena si sposta alla casa di Cassian."
-      ]
-    },
-    {
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "title": "La casa devastata",
-      "description": "Ethan arriva alla casa di Cassian e la trova devastata. Il caos nell'abitazione suggerisce una ricerca violenta o un'incursione mirata.",
-      "consequences": [
-        "Cassian risulta in pericolo.",
-        "La pista di Haven House diventa immediatamente attiva e minacciosa."
-      ]
-    },
-    {
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "title": "Il laptop e il Programma Speciale A.N.",
-      "description": "Ethan consulta il laptop e trova riferimenti all'incidente di Haven House del 17 ottobre 2001, al Programma Speciale A.N. e a una fotografia di Ethan da bambino.",
-      "consequences": [
-        "A.N. sembra essere legata a un programma o a una struttura organizzata.",
-        "Il legame tra Ethan e Haven House diventa più concreto."
-      ]
-    },
-    {
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "title": "Cassian al piano superiore",
-      "description": "Messaggi anomali avvertono Ethan del piano superiore. Ethan trova Cassian legato a una sedia e lo libera.",
-      "consequences": [
-        "Cassian sopravvive.",
-        "La casa di Cassian viene confermata come luogo compromesso.",
-        "Le anomalie sembrano guidare o avvertire Ethan."
-      ]
-    },
-    {
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "title": "Il ricordo della porta A-17",
-      "description": "Ethan usa volontariamente una percezione anomala e recupera un frammento di memoria: Haven House, una porta indicata come A-17, una donna sconosciuta che gli dice che deve dimenticare, un bambino che non può dimenticare e una promessa fatta da Ethan.",
-      "consequences": [
-        "La porta A-17 diventa una nuova pista centrale.",
-        "Ethan scopre che parte dei suoi ricordi potrebbe essere stata cancellata.",
-        "La promessa dimenticata lega Ethan a Nolan."
-      ]
-    },
-    {
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "title": "Nolan",
-      "description": "Il bambino collegato alla memoria e alla fotografia viene identificato come Nolan. Un documento indica Ethan Crowley come 'Trasferito' e Nolan come 'Non trasferito'.",
-      "consequences": [
-        "Nolan diventa un nuovo PNG centrale.",
-        "La sorte di Nolan resta ignota.",
-        "La distinzione tra trasferiti e non trasferiti diventa un mistero attivo."
-      ]
-    },
-    {
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "title": "Lo Sconosciuto di Haven House",
-      "description": "Uno sconosciuto entra nella casa di Cassian e dimostra di conoscere Haven House, A-17, Ethan, Nolan e la cancellazione dei ricordi di Ethan. Dice di voler far sopravvivere Ethan, mentre Nolan avverte di non fidarsi di lui.",
-      "consequences": [
-        "Compare una nuova figura ambigua collegata a Haven House.",
-        "Ethan riceve la conferma che i suoi ricordi potrebbero essere stati manipolati.",
-        "La fiducia nello Sconosciuto resta impossibile da stabilire."
-      ]
-    },
-    {
-      "session": 5,
-      "chapter": "Capitolo V – La Promessa",
-      "title": "La fuga",
-      "description": "Ethan sceglie di fuggire con Cassian invece di seguire lo Sconosciuto. Durante la fuga sembra manifestarsi una presenza ancora più spaventosa, capace di intimorire lo stesso Sconosciuto. Ethan e Cassian scappano dalla finestra e raggiungono la strada.",
-      "consequences": [
-        "Ethan e Cassian sopravvivono alla casa di Cassian.",
-        "Haven House viene confermata come minaccia ancora attiva.",
-        "Una nuova presenza sconosciuta entra nell'ombra degli eventi.",
-        "Il prossimo passo sarà decidere dove nascondersi, chi contattare e come raggiungere la verità su Haven House."
-      ]
-    }
-  ],
-  "master_rules": {
-    "chronicles": {
-      "enabled": true,
-      "format": "markdown",
-      "perspective": "first_person",
-      "allowed_narrators": [
-        "Ethan Crowley",
-        "Cassian Everhart"
+      "id": "mark_hale_disappearance",
+      "progress": 65,
+      "clues_added": [
+        "clue_mark_phone_call",
+        "clue_blackridge_sanatorium",
+        "clue_blackridge_not_on_map",
+        "clue_blackridge_lake_threshold"
       ],
-      "strict_point_of_view": true,
-      "chapter_single_narrator": true,
-      "external_scenes_forbidden": true,
-      "omniscient_narration_forbidden": true,
-      "knowledge_limit": "only_what_the_narrator_knows",
-      "chronicles_written_after_events": true,
-      "narrator_may_describe_only": [
-        "what_he_sees",
-        "what_he_hears",
-        "what_he_thinks",
-        "what_he_remembers",
-        "what_he_deduces",
-        "what_he_dreams"
+      "questions_added": [
+        "Dove si trova Mark Hale ora?",
+        "Come ha potuto telefonare a Ethan?",
+        "Da dove proveniva davvero la chiamata?",
+        "Perché Mark non ha chiesto di essere salvato direttamente?"
       ]
     },
-    "campaign_updates": {
-      "update_campaign_after_each_session": true,
-      "update_chronicles_after_each_session": true
+    {
+      "id": "haven_house",
+      "progress": 70,
+      "clues_added": [
+        "clue_a17_hidden_floorplan",
+        "clue_hhc_signature",
+        "clue_doctor_nolan_keeper",
+        "clue_blackridge_sanatorium"
+      ],
+      "questions_added": [
+        "Qual è il collegamento esatto tra Haven House e Blackridge?",
+        "HHC significa Haven House Center, Haven House Complex o altro?",
+        "Haven House era una copertura, una conseguenza o una struttura collegata a Blackridge?"
+      ]
+    },
+    {
+      "id": "a17_door",
+      "name": "A-17",
+      "status": "active",
+      "progress": 45,
+      "clues_added": [
+        "clue_a17_door_drawing",
+        "clue_do_not_open_a17",
+        "clue_a17_hidden_floorplan",
+        "clue_a17_is_seal",
+        "clue_doctor_nolan_keeper"
+      ],
+      "questions_added": [
+        "Cosa significa che A-17 è un Sigillo?",
+        "Che cosa sigilla A-17?",
+        "Chi o cosa vuole aprirlo?",
+        "Perché qualcosa oltre A-17 ha percepito Ethan?"
+      ]
+    },
+    {
+      "id": "nolan_identity",
+      "name": "Nolan / Doctor Nolan",
+      "status": "active",
+      "progress": 45,
+      "clues_added": [
+        "clue_doctor_nolan_keeper"
+      ],
+      "questions_added": [
+        "Doctor Nolan è lo stesso Nolan del ricordo di Ethan?",
+        "Perché è stato dichiarato morto?",
+        "Cosa significa essere il Custode?",
+        "Il Custode protegge A-17 o impedisce a qualcuno di raggiungerla?"
+      ]
+    },
+    {
+      "id": "blackridge",
+      "name": "Blackridge",
+      "status": "active",
+      "progress": 25,
+      "clues_found": [
+        "clue_blackridge_sanatorium",
+        "clue_blackridge_not_on_map",
+        "clue_blackridge_lake_threshold"
+      ],
+      "questions": [
+        "Cos'è realmente Blackridge?",
+        "Perché Blackridge non è sulla mappa?",
+        "Perché Mark lo stava cercando?",
+        "Cosa significa che si trova oltre il lago?",
+        "La Soglia è un luogo, un confine o un fenomeno?",
+        "Blackridge è collegato alla creazione o al contenimento di A-17?"
+      ]
+    },
+    {
+      "id": "lydia_effect",
+      "name": "L'effetto di Lydia su Ethan",
+      "status": "active",
+      "progress": 10,
+      "clues_found": [
+        "clue_lydia_calming_effect"
+      ],
+      "questions": [
+        "Perché Lydia sembra calmare Ethan?",
+        "È un effetto emotivo naturale o un'anomalia?",
+        "Lydia possiede un ruolo nascosto nel fenomeno?",
+        "Il legame tra Ethan, Lydia e Mark è più profondo di quanto sembri?"
+      ]
     }
-  },
-  "narrator_private_notes": [
-    "Non rivelare direttamente la vera natura di Ethan.",
-    "Non spiegare la Frattura o il Velo ai giocatori.",
-    "La Presenza deve rimanere ambigua finché non emergerà attraverso indizi.",
-    "Il cognome Hale può creare risonanze con l'Ordine dell'Occhio del Sole, ma non va forzato senza sviluppo narrativo.",
-    "Il ciondolo di Ethan è una chiave narrativa centrale e va collegato gradualmente al simbolo.",
-    "La data 17 ottobre 2001 è una pista importante e va trattata come elemento cronologico verificabile.",
-    "Haven House deve restare una scoperta graduale: non rivelare subito la sua vera funzione.",
-    "Adrian è sotto sospetto a causa della nota, ma non confermare ancora se sia affidabile o meno.",
-    "Nolan deve restare ambiguo: non confermare subito se sia vivo, morto, imprigionato o una manifestazione.",
-    "Lo Sconosciuto di Haven House non deve essere spiegato subito. Deve rimanere una figura ambigua tra custode, agente, sopravvissuto o antagonista.",
-    "La porta A-17 è una soglia narrativa importante e deve condurre a rivelazioni progressive, non immediate.",
-    "La presenza che spaventa lo Sconosciuto deve rimanere più minacciosa e meno comprensibile delle altre entità emerse finora.",
-    "Cassian ora sa che Haven House non è solo una pista storica, ma una minaccia presente."
-  ]
+  ],
+  "open_threads_added": [
+    "Cos'è realmente Blackridge?",
+    "Perché Blackridge non è sulla mappa?",
+    "Che cosa significa Soglia?",
+    "Cosa custodisce Doctor Nolan?",
+    "Doctor Nolan e Nolan sono la stessa persona?",
+    "Qual è il legame tra Haven House e Blackridge?",
+    "Cosa significa che A-17 è un Sigillo?",
+    "Chi o cosa vuole aprire A-17?",
+    "Qual è il significato della sigla HHC?",
+    "Perché Lydia sembra calmare o rafforzare Ethan?",
+    "Mark è fisicamente vivo o comunica attraverso un'anomalia?"
+  ],
+  "event_log_added": [
+    {
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "title": "Ritorno all'appartamento di Ethan",
+      "description": "Dopo la fuga dalla casa di Cassian, Ethan e Cassian raggiungono l'appartamento di Ethan. Ethan racconta a Cassian gli eventi dell'Archivio, compresi Lydia, Adrian, Miriam, Jonah, Haven House, la fotografia, la mappa e la nota che avverte di non fidarsi di Adrian.",
+      "consequences": [
+        "Cassian viene aggiornato sugli eventi avvenuti all'Archivio.",
+        "Le piste di Haven House, A-17, Mark Hale e Adrian vengono collegate."
+      ]
+    },
+    {
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "title": "Lo Sguardo Ricambiato",
+      "description": "Ethan usa la Percezione dell'Osservatore per indagare A-17, ma fallisce. Vede un corridoio e la porta A-17. Qualcosa oltre la porta lo percepisce. Una voce femminile sconosciuta lo avverte: 'Ti hanno trovato' ed Ethan collassa.",
+      "consequences": [
+        "Ethan ottiene la condizione temporanea Sguardo Ricambiato.",
+        "Qualcosa oltre A-17 sa ora dell'esistenza o della posizione spirituale di Ethan.",
+        "La voce femminile della visione diventa un nuovo mistero."
+      ]
+    },
+    {
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "title": "La chiamata a Lydia",
+      "description": "Ethan telefona a Lydia Hale chiedendole informazioni su Mark senza rivelare tutto ciò che ha scoperto. Lydia racconta che Mark era ossessionato dal disegno di una porta. Trova un foglio che il giorno prima era bianco e che ora mostra una porta con la scritta A-17.",
+      "consequences": [
+        "Lydia viene coinvolta direttamente nella nuova fase dell'indagine.",
+        "A-17 si manifesta anche attraverso gli appunti di Mark."
+      ]
+    },
+    {
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "title": "Il foglio di Mark",
+      "description": "Lydia raggiunge l'appartamento di Ethan portando il foglio. Sul disegno della porta A-17 compare anche la frase 'NON LASCIATELO APRIRE'. Analizzando il foglio, Ethan e Cassian scoprono una planimetria nascosta con una stanza o cella A-17 e la sigla HHC.",
+      "consequences": [
+        "A-17 viene collegata a una struttura fisica.",
+        "La sigla HHC entra tra i misteri attivi.",
+        "Il foglio diventa una prova materiale centrale."
+      ]
+    },
+    {
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "title": "La telefonata di Mark",
+      "description": "Ethan riceve una telefonata da numero sconosciuto. La voce sembra appartenere a Mark Hale, riconosciuta anche da Lydia. Mark dice che A-17 non è una stanza ma un Sigillo e chiede a Ethan di trovare un nome nascosto nella planimetria.",
+      "consequences": [
+        "Mark Hale è quasi certamente vivo o ancora capace di comunicare.",
+        "A-17 viene ridefinita come Sigillo.",
+        "La telefonata indica che il pericolo è immediato."
+      ]
+    },
+    {
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "title": "Doctor Nolan",
+      "description": "Sul retro del foglio, usando la grafite sulle impronte lasciate nella carta, emerge il messaggio: 'DOCTOR NOLAN. NON È MORTO. LUI È IL CUSTODE.'",
+      "consequences": [
+        "Nolan viene collegato al ruolo di Custode.",
+        "La presunta morte di Doctor Nolan viene messa in dubbio.",
+        "Il ruolo del Custode diventa centrale per comprendere A-17."
+      ]
+    },
+    {
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "title": "Blackridge non è sulla mappa",
+      "description": "Lydia mostra altri appunti di Mark. Emergono le frasi 'Trova il Custode prima che trovi te' e 'Blackridge non è sulla mappa'. Lydia ricorda che Mark indicava un punto oltre un lago a nord-est di Ravenfall e usava la parola 'Soglia'.",
+      "consequences": [
+        "Il Vecchio Sanatorio Blackridge diventa la prossima destinazione.",
+        "La Soglia diventa un nuovo concetto chiave.",
+        "La mappa ordinaria potrebbe non bastare per raggiungere Blackridge."
+      ]
+    },
+    {
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "title": "Il piano per l'alba",
+      "description": "Ethan decide che Lydia resterà nel suo appartamento per la notte e il giorno seguente, in attesa di un eventuale nuovo contatto da Mark. Ethan e Cassian partiranno all'alba per il lago a nord-est di Ravenfall, cercando tracce di Blackridge.",
+      "consequences": [
+        "Lydia diventa parte della squadra investigativa, pur restando in posizione sicura.",
+        "Ethan e Cassian hanno un obiettivo concreto per la prossima sessione.",
+        "La prossima scena inizierà con la partenza verso il lago."
+      ]
+    },
+    {
+      "session": 6,
+      "chapter": "Capitolo VI – La Soglia Nascosta",
+      "title": "La calma di Lydia",
+      "description": "Guardando Lydia, Ethan percepisce un improvviso senso di benessere, calma e protezione, come se i suoi turbamenti fossero temporaneamente spazzati via. La sensazione lo fa sentire più forte.",
+      "consequences": [
+        "Il rapporto tra Ethan e Lydia si approfondisce.",
+        "L'effetto emotivo o anomalo di Lydia su Ethan diventa un nuovo mistero.",
+        "Ethan affronta la notte con maggiore stabilità interiore."
+      ]
+    }
+  ],
+  "next_scene": "Ethan e Cassian partono all'alba verso il lago a nord-est di Ravenfall per cercare Blackridge. Lydia rimane nell'appartamento di Ethan in attesa di un eventuale nuovo contatto da Mark."
 }
