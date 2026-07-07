@@ -9,11 +9,11 @@
     "notes": [
       "Creato retroattivamente a partire dalla cronologia giocata prima dell'introduzione del sistema campaign.json.",
       "Aggiornato dopo la conclusione del Capitolo IV – Le Tracce di Mark.",
-      "Aggiornato dopo la Sessione 5 del Capitolo V – Haven House."
+      "Aggiornato dopo la Sessione 5 del Capitolo V – La Promessa."
     ]
   },
   "session": {
-    "current_chapter": "Capitolo V – Haven House",
+    "current_chapter": "Capitolo V – La Promessa",
     "current_scene": "Strada notturna di Ravenfall dopo la fuga dalla casa di Cassian",
     "last_scene": "Ethan ha raggiunto la casa di Cassian dopo un messaggio urgente. Ha trovato l'abitazione devastata, Cassian legato al piano superiore e nuovi documenti su Haven House. Attraverso una percezione anomala ha recuperato un frammento di memoria legato alla porta A-17, a Nolan e a una promessa fatta nell'infanzia. Uno sconosciuto collegato a Haven House è comparso nella casa, ma Ethan ha scelto di fuggire con Cassian.",
     "resume_from": "Ethan e Cassian sono in strada, scossi dopo la fuga dalla casa di Cassian. Cassian ha compreso che Haven House non è un evento chiuso nel passato e che ciò che è accaduto nel 2001 sta ancora agendo su Ethan."
@@ -47,13 +47,13 @@
       "id": "ethan-apartment",
       "discovered": true,
       "discovery_order": 2,
-      "last_visit": "Capitolo V – Haven House"
+      "last_visit": "Capitolo V – La Promessa"
     },
     {
       "id": "cassian-house",
       "discovered": true,
       "discovery_order": 3,
-      "last_visit": "Capitolo V – Haven House",
+      "last_visit": "Capitolo V – La Promessa",
       "notes": "Casa trovata devastata. Cassian è stato legato al piano superiore. Qui Ethan ha recuperato frammenti di memoria su Haven House, Nolan e la porta A-17."
     },
     {
@@ -1017,7 +1017,7 @@
     {
       "id": "clue_haven_house_program_an",
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "type": "document",
       "description": "Nel materiale consultato alla casa di Cassian emerge il riferimento al Programma Speciale A.N., collegato a Haven House e agli eventi del 17 ottobre 2001.",
       "location_found": "Casa di Cassian",
@@ -1029,7 +1029,7 @@
     {
       "id": "clue_a17_memory_fragment",
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "type": "memory_fragment",
       "description": "Ethan recupera un frammento di memoria: Haven House, la porta A-17, una donna sconosciuta che gli dice che deve dimenticare, un altro bambino che non può dimenticare e una promessa di tornare.",
       "location_found": "Casa di Cassian",
@@ -1040,7 +1040,7 @@
     {
       "id": "clue_nolan_identity",
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "type": "identity",
       "description": "Il bambino collegato alla fotografia e al frammento di memoria viene identificato come Nolan.",
       "location_found": "Casa di Cassian",
@@ -1051,7 +1051,7 @@
     {
       "id": "clue_nolan_promise",
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "type": "memory/promise",
       "description": "Ethan ricorda o percepisce di aver promesso a Nolan che sarebbe tornato.",
       "location_found": "Casa di Cassian",
@@ -1062,7 +1062,7 @@
     {
       "id": "clue_haven_house_transfer_record",
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "type": "document",
       "description": "Un documento indica Ethan Crowley come 'Trasferito' e Nolan come 'Non trasferito'.",
       "location_found": "Casa di Cassian",
@@ -1074,7 +1074,7 @@
     {
       "id": "clue_haven_house_stranger_knows_ethan",
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "type": "encounter",
       "description": "Uno sconosciuto entra nella casa di Cassian e dimostra di conoscere Ethan, Haven House, la porta A-17, Nolan e la cancellazione dei ricordi di Ethan. Afferma di volerlo far sopravvivere.",
       "location_found": "Casa di Cassian",
@@ -1086,7 +1086,7 @@
     {
       "id": "clue_unknown_greater_presence",
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "type": "manifestation",
       "description": "Durante la fuga dalla casa di Cassian, sembra manifestarsi una presenza ancora più spaventosa, capace di intimorire lo Sconosciuto di Haven House.",
       "location_found": "Casa di Cassian",
@@ -1289,7 +1289,7 @@
     },
     {
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "title": "Il messaggio di Cassian",
       "description": "Ethan riceve un messaggio urgente da Cassian legato a Haven House e decide di raggiungerlo immediatamente.",
       "consequences": [
@@ -1299,7 +1299,7 @@
     },
     {
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "title": "La casa devastata",
       "description": "Ethan arriva alla casa di Cassian e la trova devastata. Il caos nell'abitazione suggerisce una ricerca violenta o un'incursione mirata.",
       "consequences": [
@@ -1309,7 +1309,7 @@
     },
     {
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "title": "Il laptop e il Programma Speciale A.N.",
       "description": "Ethan consulta il laptop e trova riferimenti all'incidente di Haven House del 17 ottobre 2001, al Programma Speciale A.N. e a una fotografia di Ethan da bambino.",
       "consequences": [
@@ -1319,7 +1319,7 @@
     },
     {
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "title": "Cassian al piano superiore",
       "description": "Messaggi anomali avvertono Ethan del piano superiore. Ethan trova Cassian legato a una sedia e lo libera.",
       "consequences": [
@@ -1330,7 +1330,7 @@
     },
     {
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "title": "Il ricordo della porta A-17",
       "description": "Ethan usa volontariamente una percezione anomala e recupera un frammento di memoria: Haven House, una porta indicata come A-17, una donna sconosciuta che gli dice che deve dimenticare, un bambino che non può dimenticare e una promessa fatta da Ethan.",
       "consequences": [
@@ -1341,7 +1341,7 @@
     },
     {
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "title": "Nolan",
       "description": "Il bambino collegato alla memoria e alla fotografia viene identificato come Nolan. Un documento indica Ethan Crowley come 'Trasferito' e Nolan come 'Non trasferito'.",
       "consequences": [
@@ -1352,7 +1352,7 @@
     },
     {
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "title": "Lo Sconosciuto di Haven House",
       "description": "Uno sconosciuto entra nella casa di Cassian e dimostra di conoscere Haven House, A-17, Ethan, Nolan e la cancellazione dei ricordi di Ethan. Dice di voler far sopravvivere Ethan, mentre Nolan avverte di non fidarsi di lui.",
       "consequences": [
@@ -1363,7 +1363,7 @@
     },
     {
       "session": 5,
-      "chapter": "Capitolo V – Haven House",
+      "chapter": "Capitolo V – La Promessa",
       "title": "La fuga",
       "description": "Ethan sceglie di fuggire con Cassian invece di seguire lo Sconosciuto. Durante la fuga sembra manifestarsi una presenza ancora più spaventosa, capace di intimorire lo stesso Sconosciuto. Ethan e Cassian scappano dalla finestra e raggiungono la strada.",
       "consequences": [
