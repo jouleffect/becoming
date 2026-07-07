@@ -664,30 +664,7 @@
         "Potrebbe essere una presenza, un ricordo, un sopravvissuto o qualcosa rimasto legato a Haven House.",
         "La nuova menzione di Doctor Nolan potrebbe essere collegata a lui, ma la relazione non è ancora confermata."
       ]
-    },
-    {
-      "id": "haven_house_stranger",
-      "name": "Lo Sconosciuto di Haven House",
-      "alive": true,
-      "type": "unknown",
-      "location": "unknown",
-      "relationship": "knows_ethan",
-      "attitude_toward_players": "ambiguous/threatening",
-      "known_secrets": [],
-      "public_information": [
-        "Conosce Haven House.",
-        "Conosce la porta A-17.",
-        "Conosce Nolan.",
-        "Afferma che i ricordi di Ethan sono stati cancellati.",
-        "Dice di voler far sopravvivere Ethan.",
-        "Sembra sapere cosa accadde nel 2001."
-      ],
-      "notes": [
-        "Nolan avverte Ethan di non fidarsi di lui.",
-        "Sembra temere una presenza ancora più pericolosa comparsa durante la fuga.",
-        "Non è confermato se sia un custode, un agente di A.N., un sopravvissuto o un antagonista."
-      ]
-    },
+    },    
     {
       "id": "doctor_nolan",
       "name": "Doctor Nolan",
