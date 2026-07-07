@@ -641,24 +641,7 @@
         "Spinge verso risposte più dirette, ma non rivela tutto ciò che sa.",
         "Ha riconosciuto la natura ricorrente del fenomeno senza possederne una spiegazione completa."
       ]
-    },
-    {
-      "id": "claire_morton",
-      "name": "Claire Morton",
-      "alive": null,
-      "type": "missing_person",
-      "location": "unknown",
-      "relationship": "precedent_case",
-      "attitude_toward_players": "unknown",
-      "known_secrets": [],
-      "public_information": [
-        "Studentessa di ventitré anni scomparsa tre anni prima.",
-        "Prima di sparire aveva riempito quattro quaderni con nomi di persone che non avrebbe dovuto conoscere."
-      ],
-      "notes": [
-        "Caso precedente citato da Jonah come pattern simile alla vicenda di Mark Hale."
-      ]
-    },
+    },    
     {
       "id": "nolan",
       "name": "Nolan",
@@ -723,25 +706,6 @@
       "notes": [
         "Non è chiaro se Doctor Nolan sia la stessa figura del bambino Nolan, un adulto collegato a lui, un titolo, una memoria alterata o un'entità distinta.",
         "La frase 'Trova il Custode prima che trovi te' suggerisce che Doctor Nolan possa essere attivo e pericoloso."
-      ]
-    },
-    {
-      "id": "female_warning_voice",
-      "name": "Voce femminile di A-17",
-      "alive": null,
-      "type": "unknown_voice",
-      "location": "A-17 / unknown",
-      "relationship": "warning_ethan",
-      "attitude_toward_players": "protective/terrified",
-      "known_secrets": [],
-      "public_information": [
-        "Durante la visione di Ethan su A-17, una voce femminile ha gridato: 'No! Non guardare!'",
-        "La voce ha detto: 'Ti hanno trovato!'",
-        "La voce ha urlato: 'ETHAN SCAPPA!'"
-      ],
-      "notes": [
-        "Potrebbe essere collegata alla donna del frammento di memoria di Haven House, ma non è confermato.",
-        "Sembra sapere che guardare oltre A-17 espone Ethan a un pericolo concreto."
       ]
     }
   ],
@@ -936,22 +900,6 @@
         "Perché A-17 è un sigillo?",
         "Cosa non deve essere lasciato aprire?",
         "Chi o cosa ha guardato Ethan dall'altra parte?"
-      ]
-    },
-    {
-      "id": "haven_house_stranger_identity",
-      "name": "Lo Sconosciuto di Haven House",
-      "status": "active",
-      "progress": 10,
-      "clues_found": [
-        "clue_haven_house_stranger_knows_ethan"
-      ],
-      "questions": [
-        "Chi è lo Sconosciuto?",
-        "Perché conosce Ethan?",
-        "Perché dice di volerlo far sopravvivere?",
-        "Perché Nolan dice di non fidarsi di lui?",
-        "È collegato al custode, ad A.N. o a Haven House?"
       ]
     },
     {
