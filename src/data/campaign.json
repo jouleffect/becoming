@@ -1,21 +1,22 @@
 {
   "campaign": {
     "name": "Becoming – Campagna I: La Nuova Razza",
-    "version": "1.0",
-    "current_session": 4,
+    "version": "1.1",
+    "current_session": 5,
     "started_at": null,
     "status": "active",
     "mode": "retroactive_save",
     "notes": [
       "Creato retroattivamente a partire dalla cronologia giocata prima dell'introduzione del sistema campaign.json.",
-      "Aggiornato dopo la conclusione del Capitolo IV – Le Tracce di Mark."
+      "Aggiornato dopo la conclusione del Capitolo IV – Le Tracce di Mark.",
+      "Aggiornato dopo la Sessione 5 del Capitolo V – Haven House."
     ]
   },
   "session": {
     "current_chapter": "Capitolo V – Haven House",
-    "current_scene": "Appartamento di Ethan, mattina seguente",
-    "last_scene": "Ethan ha lasciato l'archivio universitario portando con sé la fotografia di Haven House, la mappa nascosta, la pagina degli appunti di Mark e la nota sul custode. Tornato a casa, ha analizzato i materiali da solo e ha deciso di contattare Cassian la mattina seguente.",
-    "resume_from": "Ethan si trova a casa dopo una notte difficile. La prossima azione prevista è contattare Cassian e mostrargli fotografia, mappa, data del 17 ottobre 2001 e gli altri elementi raccolti su Haven House."
+    "current_scene": "Strada notturna di Ravenfall dopo la fuga dalla casa di Cassian",
+    "last_scene": "Ethan ha raggiunto la casa di Cassian dopo un messaggio urgente. Ha trovato l'abitazione devastata, Cassian legato al piano superiore e nuovi documenti su Haven House. Attraverso una percezione anomala ha recuperato un frammento di memoria legato alla porta A-17, a Nolan e a una promessa fatta nell'infanzia. Uno sconosciuto collegato a Haven House è comparso nella casa, ma Ethan ha scelto di fuggire con Cassian.",
+    "resume_from": "Ethan e Cassian sono in strada, scossi dopo la fuga dalla casa di Cassian. Cassian ha compreso che Haven House non è un evento chiuso nel passato e che ciò che è accaduto nel 2001 sta ancora agendo su Ethan."
   },
   "world_state": {
     "supernatural_activity": "medium",
@@ -30,7 +31,9 @@
       "Le anomalie iniziano a concentrarsi intorno a Ethan Crowley.",
       "Le anomalie non si limitano più ai sogni: documenti e messaggi sembrano comparire in luoghi chiusi o sorvegliati.",
       "La pista di Mark Hale conduce a Haven House, un luogo apparentemente cancellato dagli archivi ufficiali.",
-      "Ethan possiede ora prove materiali che lo collegano a eventi avvenuti durante la sua infanzia."
+      "Ethan possiede ora prove materiali che lo collegano a eventi avvenuti durante la sua infanzia.",
+      "Gli eventi alla casa di Cassian indicano che Haven House continua ad agire nel presente.",
+      "Le manifestazioni legate ai ricordi di Ethan sembrano intensificarsi."
     ]
   },
   "locations": [
@@ -44,13 +47,14 @@
       "id": "ethan-apartment",
       "discovered": true,
       "discovery_order": 2,
-      "last_visit": "Capitolo IV – Le Tracce di Mark"
+      "last_visit": "Capitolo V – Haven House"
     },
     {
       "id": "cassian-house",
       "discovered": true,
       "discovery_order": 3,
-      "last_visit": "Capitolo II – Eco Diurne"
+      "last_visit": "Capitolo V – Haven House",
+      "notes": "Casa trovata devastata. Cassian è stato legato al piano superiore. Qui Ethan ha recuperato frammenti di memoria su Haven House, Nolan e la porta A-17."
     },
     {
       "id": "the-black-finch",
@@ -118,7 +122,7 @@
       "discovered": false,
       "discovery_order": null,
       "last_visit": null,
-      "notes": "Istituto legato all'infanzia di Ethan. La possibile posizione è nella periferia nord, oggi area industriale/magazzini. Non ancora visitato in gioco."
+      "notes": "Istituto legato all'infanzia di Ethan. La possibile posizione è nella periferia nord, oggi area industriale/magazzini. Non ancora visitato in gioco. Nuovi indizi indicano una porta A-17, un bambino chiamato Nolan e il Programma Speciale A.N."
     },
     {
       "id": "periferia-nord-industriale",
@@ -139,9 +143,9 @@
       "becoming_stage": 0,
       "humanity": 100,
       "health": "shaken",
-      "current_location": "Appartamento di Ethan",
+      "current_location": "Strade di Ravenfall",
       "health_points": 5,
-      "stress": 4,
+      "stress": 6,
       "attributes": {
         "istinto": 5,
         "volonta": 4,
@@ -158,6 +162,11 @@
           "name": "Sogni Condivisi",
           "status": "latent",
           "notes": "Sogna volti sconosciuti, luoghi non riconosciuti e una fame anomala."
+        },
+        {
+          "name": "Percezione dell'Osservatore",
+          "status": "emerging",
+          "notes": "Durante gli eventi alla casa di Cassian, Ethan ha usato volontariamente una percezione anomala per entrare in contatto con un frammento di memoria legato a Nolan e alla porta A-17."
         }
       ],
       "talents": [
@@ -169,7 +178,8 @@
       "conditions": [
         "insonnia",
         "dolori alla testa durante manifestazioni del simbolo",
-        "fame onirica anomala"
+        "fame onirica anomala",
+        "frammenti di memoria recuperati su Haven House"
       ],
       "equipment": [
         {
@@ -206,6 +216,13 @@
           "description": "Foglio apparso nell'archivio con la frase: 'NON FIDATEVI DI ADRIAN.' Origine sconosciuta.",
           "status": "in_possession",
           "importance": "medium"
+        },
+        {
+          "id": "haven_house_transfer_record",
+          "name": "Documento trasferimenti Haven House",
+          "description": "Documento consultato alla casa di Cassian. Riporta Ethan Crowley come 'Trasferito' e Nolan come 'Non trasferito'.",
+          "status": "known",
+          "importance": "high"
         }
       ],
       "goals": [
@@ -214,14 +231,19 @@
         "Scoprire cosa è accaduto a Mark Hale",
         "Proteggere gli innocenti",
         "Trovare Haven House",
-        "Contattare Cassian e mostrargli le prove raccolte"
+        "Scoprire chi è Nolan",
+        "Scoprire cosa c'era dietro la porta A-17",
+        "Capire chi ha cancellato i suoi ricordi"
       ],
       "notes": [
         "Non conosce la propria vera natura.",
         "Ha scelto di non rispondere alla Presenza nell'Archivio.",
         "È apparentemente il centro dell'attenzione di una forza sovrannaturale sconosciuta.",
         "Ha deciso di non rivelare ad Adrian, Miriam e Jonah l'intenzione di coinvolgere Cassian.",
-        "Ha scelto di lasciare l'archivio prima di indagare i rumori al piano superiore."
+        "Ha scelto di lasciare l'archivio prima di indagare i rumori al piano superiore.",
+        "Ha liberato Cassian nella casa devastata.",
+        "Ha recuperato un frammento di memoria su Haven House, la porta A-17 e una promessa fatta a Nolan.",
+        "Ha scelto di fuggire dallo Sconosciuto di Haven House invece di fidarsi di lui."
       ]
     },
     {
@@ -231,12 +253,13 @@
       "race_real": "Umano",
       "becoming_stage": 0,
       "humanity": 100,
-      "health": "healthy",
-      "current_location": "Casa di Cassian",
+      "health": "shaken",
+      "current_location": "Strade di Ravenfall con Ethan",
       "powers": [],
       "mutations": [],
       "conditions": [
-        "ossessione crescente verso il simbolo e il mistero"
+        "ossessione crescente verso il simbolo e il mistero",
+        "shock dopo il rapimento e la fuga dalla propria casa"
       ],
       "inventory": [
         {
@@ -259,13 +282,16 @@
         "Studiare il simbolo",
         "Comprendere il collegamento tra sogni, sparizioni e testi antichi",
         "Proteggere Ethan e capire perché è coinvolto",
-        "Scoprire la vera natura dei cambiamenti di Ravenfall"
+        "Scoprire la vera natura dei cambiamenti di Ravenfall",
+        "Capire cosa è accaduto a Haven House"
       ],
       "notes": [
         "Ha trascorso la notte nell'appartamento di Ethan dopo gli eventi dell'Archivio.",
         "È preoccupato dalla parola 'fame' usata da Ethan.",
         "Sta studiando il libro e i collegamenti storici.",
-        "Non sa ancora degli eventi dell'archivio del Capitolo IV, ma Ethan intende contattarlo la mattina seguente."
+        "È stato trovato legato al piano superiore della propria casa dopo il messaggio urgente inviato a Ethan.",
+        "Ha visto abbastanza da comprendere che Haven House non è un evento chiuso nel passato.",
+        "È sopravvissuto alla fuga dalla casa insieme a Ethan."
       ]
     }
   ],
@@ -274,7 +300,7 @@
       "source": "ethan_crowley",
       "target": "cassian_everhart",
       "type": "amici",
-      "description": "Cassian è uno degli amici più vicini di Ethan e lo aiuta a interpretare ciò che sta accadendo.",
+      "description": "Cassian è uno degli amici più vicini di Ethan e lo aiuta a interpretare ciò che sta accadendo. Dopo gli eventi alla casa di Cassian, il legame tra i due si rafforza ma entrambi sono più esposti al pericolo.",
       "known": true
     },
     {
@@ -337,7 +363,21 @@
       "source": "ethan_crowley",
       "target": "haven-house",
       "type": "legame d'infanzia",
-      "description": "Una fotografia mostra Ethan bambino davanti a Haven House, con la dicitura 'Primo evento registrato'.",
+      "description": "Una fotografia mostra Ethan bambino davanti a Haven House, con la dicitura 'Primo evento registrato'. Ethan ha ora recuperato un frammento di memoria legato alla porta A-17 e a Nolan.",
+      "known": true
+    },
+    {
+      "source": "ethan_crowley",
+      "target": "nolan",
+      "type": "promessa dimenticata",
+      "description": "Nolan sembra conoscere Ethan dall'infanzia e sostiene che Ethan gli abbia promesso di tornare.",
+      "known": true
+    },
+    {
+      "source": "ethan_crowley",
+      "target": "haven_house_stranger",
+      "type": "conoscenza asimmetrica",
+      "description": "Lo Sconosciuto conosce Ethan, Haven House, Nolan, la porta A-17 e la cancellazione dei ricordi di Ethan. Ethan non sa chi sia.",
       "known": true
     }
   ],
@@ -542,6 +582,50 @@
       "notes": [
         "Caso precedente citato da Jonah come pattern simile alla vicenda di Mark Hale."
       ]
+    },
+    {
+      "id": "nolan",
+      "name": "Nolan",
+      "alive": null,
+      "type": "unknown_child",
+      "location": "unknown",
+      "relationship": "linked_to_ethan_childhood",
+      "attitude_toward_players": "sad/ambiguous",
+      "known_secrets": [],
+      "public_information": [
+        "Appare come il bambino collegato alla fotografia di Haven House.",
+        "Conosce Ethan.",
+        "Sostiene che Ethan gli abbia promesso di tornare.",
+        "Avverte Ethan di non fidarsi dello Sconosciuto di Haven House."
+      ],
+      "notes": [
+        "È collegato alla porta A-17.",
+        "Non è stato trasferito secondo un documento di Haven House.",
+        "Potrebbe essere una presenza, un ricordo, un sopravvissuto o qualcosa rimasto legato a Haven House."
+      ]
+    },
+    {
+      "id": "haven_house_stranger",
+      "name": "Lo Sconosciuto di Haven House",
+      "alive": true,
+      "type": "unknown",
+      "location": "unknown",
+      "relationship": "knows_ethan",
+      "attitude_toward_players": "ambiguous/threatening",
+      "known_secrets": [],
+      "public_information": [
+        "Conosce Haven House.",
+        "Conosce la porta A-17.",
+        "Conosce Nolan.",
+        "Afferma che i ricordi di Ethan sono stati cancellati.",
+        "Dice di voler far sopravvivere Ethan.",
+        "Sembra sapere cosa accadde nel 2001."
+      ],
+      "notes": [
+        "Nolan avverte Ethan di non fidarsi di lui.",
+        "Sembra temere una presenza ancora più pericolosa comparsa durante la fuga.",
+        "Non è confermato se sia un custode, un agente di A.N., un sopravvissuto o un antagonista."
+      ]
     }
   ],
   "mysteries": [
@@ -629,33 +713,43 @@
       "id": "haven_house",
       "name": "Haven House",
       "status": "active",
-      "progress": 35,
+      "progress": 60,
       "clues_found": [
         "clue_haven_house_photo",
         "clue_haven_house_map",
         "clue_haven_house_date",
-        "clue_haven_house_keeper_note"
+        "clue_haven_house_keeper_note",
+        "clue_haven_house_program_an",
+        "clue_a17_memory_fragment",
+        "clue_nolan_identity",
+        "clue_haven_house_transfer_record"
       ],
       "questions": [
         "Cos'era realmente Haven House?",
         "Perché i documenti ufficiali sembrano cancellati?",
         "Perché Ethan bambino era stato fotografato lì?",
         "Cosa accadde il 17 ottobre 2001?",
-        "Chi è il custode?"
+        "Chi è il custode?",
+        "Cosa c'era dietro la porta A-17?",
+        "Chi è Nolan?",
+        "Perché Ethan è stato trasferito e Nolan no?",
+        "Chi ha cancellato i ricordi di Ethan?"
       ]
     },
     {
       "id": "a_n_signature",
       "name": "La sigla A.N.",
       "status": "active",
-      "progress": 20,
+      "progress": 35,
       "clues_found": [
-        "clue_an_signature"
+        "clue_an_signature",
+        "clue_haven_house_program_an"
       ],
       "questions": [
         "Cosa significa A.N.?",
         "Chi osservava le persone indicate nei vecchi dossier?",
-        "A.N. è un'organizzazione, una persona o una classificazione?"
+        "A.N. è un'organizzazione, una persona o una classificazione?",
+        "Cos'era il Programma Speciale A.N.?"
       ]
     },
     {
@@ -671,6 +765,53 @@
         "Cos'è davvero l'Archivio Nascosto?",
         "Chi raccoglie documenti sulle persone scomparse?",
         "Quale connessione esiste tra Archivio Nascosto, A.N. e Haven House?"
+      ]
+    },
+    {
+      "id": "nolan_identity",
+      "name": "Nolan",
+      "status": "active",
+      "progress": 20,
+      "clues_found": [
+        "clue_nolan_identity",
+        "clue_nolan_promise",
+        "clue_haven_house_transfer_record"
+      ],
+      "questions": [
+        "Chi è Nolan?",
+        "Perché Ethan gli aveva promesso di tornare?",
+        "Perché Nolan non è stato trasferito?",
+        "Nolan è vivo, morto, imprigionato o qualcosa di diverso?"
+      ]
+    },
+    {
+      "id": "a17_door",
+      "name": "La porta A-17",
+      "status": "active",
+      "progress": 15,
+      "clues_found": [
+        "clue_a17_memory_fragment"
+      ],
+      "questions": [
+        "Cosa c'era dietro la porta A-17?",
+        "Perché il ricordo di A-17 è stato cancellato?",
+        "Che legame ha A-17 con Ethan e Nolan?"
+      ]
+    },
+    {
+      "id": "haven_house_stranger_identity",
+      "name": "Lo Sconosciuto di Haven House",
+      "status": "active",
+      "progress": 10,
+      "clues_found": [
+        "clue_haven_house_stranger_knows_ethan"
+      ],
+      "questions": [
+        "Chi è lo Sconosciuto?",
+        "Perché conosce Ethan?",
+        "Perché dice di volerlo far sopravvivere?",
+        "Perché Nolan dice di non fidarsi di lui?",
+        "È collegato al custode, ad A.N. o a Haven House?"
       ]
     }
   ],
@@ -872,6 +1013,87 @@
         "miriam",
         "jonah"
       ]
+    },
+    {
+      "id": "clue_haven_house_program_an",
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "type": "document",
+      "description": "Nel materiale consultato alla casa di Cassian emerge il riferimento al Programma Speciale A.N., collegato a Haven House e agli eventi del 17 ottobre 2001.",
+      "location_found": "Casa di Cassian",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart"
+      ]
+    },
+    {
+      "id": "clue_a17_memory_fragment",
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "type": "memory_fragment",
+      "description": "Ethan recupera un frammento di memoria: Haven House, la porta A-17, una donna sconosciuta che gli dice che deve dimenticare, un altro bambino che non può dimenticare e una promessa di tornare.",
+      "location_found": "Casa di Cassian",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_nolan_identity",
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "type": "identity",
+      "description": "Il bambino collegato alla fotografia e al frammento di memoria viene identificato come Nolan.",
+      "location_found": "Casa di Cassian",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_nolan_promise",
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "type": "memory/promise",
+      "description": "Ethan ricorda o percepisce di aver promesso a Nolan che sarebbe tornato.",
+      "location_found": "Casa di Cassian",
+      "discovered_by": [
+        "ethan_crowley"
+      ]
+    },
+    {
+      "id": "clue_haven_house_transfer_record",
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "type": "document",
+      "description": "Un documento indica Ethan Crowley come 'Trasferito' e Nolan come 'Non trasferito'.",
+      "location_found": "Casa di Cassian",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart"
+      ]
+    },
+    {
+      "id": "clue_haven_house_stranger_knows_ethan",
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "type": "encounter",
+      "description": "Uno sconosciuto entra nella casa di Cassian e dimostra di conoscere Ethan, Haven House, la porta A-17, Nolan e la cancellazione dei ricordi di Ethan. Afferma di volerlo far sopravvivere.",
+      "location_found": "Casa di Cassian",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart"
+      ]
+    },
+    {
+      "id": "clue_unknown_greater_presence",
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "type": "manifestation",
+      "description": "Durante la fuga dalla casa di Cassian, sembra manifestarsi una presenza ancora più spaventosa, capace di intimorire lo Sconosciuto di Haven House.",
+      "location_found": "Casa di Cassian",
+      "discovered_by": [
+        "ethan_crowley",
+        "cassian_everhart"
+      ]
     }
   ],
   "open_threads": [
@@ -894,7 +1116,14 @@
     "Perché Mark stava cercando Ethan?",
     "Perché una nota avverte di non fidarsi di Adrian?",
     "Chi o cosa si trovava al piano superiore dell'archivio?",
-    "Come reagirà Cassian quando vedrà fotografia e mappa?"
+    "Chi è Nolan?",
+    "Cosa c'era dietro la porta A-17?",
+    "Perché Ethan è stato trasferito?",
+    "Perché Nolan non è stato trasferito?",
+    "Chi ha cancellato i ricordi di Ethan?",
+    "Chi è lo Sconosciuto di Haven House?",
+    "Cos'era il Programma Speciale A.N.?",
+    "Quale presenza ha spaventato lo Sconosciuto durante la fuga?"
   ],
   "event_log": [
     {
@@ -1057,6 +1286,92 @@
         "Il piano superiore dell'archivio resta un pericolo o mistero irrisolto.",
         "Il prossimo passo sarà coinvolgere Cassian."
       ]
+    },
+    {
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "title": "Il messaggio di Cassian",
+      "description": "Ethan riceve un messaggio urgente da Cassian legato a Haven House e decide di raggiungerlo immediatamente.",
+      "consequences": [
+        "Ethan lascia il proprio appartamento.",
+        "La scena si sposta alla casa di Cassian."
+      ]
+    },
+    {
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "title": "La casa devastata",
+      "description": "Ethan arriva alla casa di Cassian e la trova devastata. Il caos nell'abitazione suggerisce una ricerca violenta o un'incursione mirata.",
+      "consequences": [
+        "Cassian risulta in pericolo.",
+        "La pista di Haven House diventa immediatamente attiva e minacciosa."
+      ]
+    },
+    {
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "title": "Il laptop e il Programma Speciale A.N.",
+      "description": "Ethan consulta il laptop e trova riferimenti all'incidente di Haven House del 17 ottobre 2001, al Programma Speciale A.N. e a una fotografia di Ethan da bambino.",
+      "consequences": [
+        "A.N. sembra essere legata a un programma o a una struttura organizzata.",
+        "Il legame tra Ethan e Haven House diventa più concreto."
+      ]
+    },
+    {
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "title": "Cassian al piano superiore",
+      "description": "Messaggi anomali avvertono Ethan del piano superiore. Ethan trova Cassian legato a una sedia e lo libera.",
+      "consequences": [
+        "Cassian sopravvive.",
+        "La casa di Cassian viene confermata come luogo compromesso.",
+        "Le anomalie sembrano guidare o avvertire Ethan."
+      ]
+    },
+    {
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "title": "Il ricordo della porta A-17",
+      "description": "Ethan usa volontariamente una percezione anomala e recupera un frammento di memoria: Haven House, una porta indicata come A-17, una donna sconosciuta che gli dice che deve dimenticare, un bambino che non può dimenticare e una promessa fatta da Ethan.",
+      "consequences": [
+        "La porta A-17 diventa una nuova pista centrale.",
+        "Ethan scopre che parte dei suoi ricordi potrebbe essere stata cancellata.",
+        "La promessa dimenticata lega Ethan a Nolan."
+      ]
+    },
+    {
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "title": "Nolan",
+      "description": "Il bambino collegato alla memoria e alla fotografia viene identificato come Nolan. Un documento indica Ethan Crowley come 'Trasferito' e Nolan come 'Non trasferito'.",
+      "consequences": [
+        "Nolan diventa un nuovo PNG centrale.",
+        "La sorte di Nolan resta ignota.",
+        "La distinzione tra trasferiti e non trasferiti diventa un mistero attivo."
+      ]
+    },
+    {
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "title": "Lo Sconosciuto di Haven House",
+      "description": "Uno sconosciuto entra nella casa di Cassian e dimostra di conoscere Haven House, A-17, Ethan, Nolan e la cancellazione dei ricordi di Ethan. Dice di voler far sopravvivere Ethan, mentre Nolan avverte di non fidarsi di lui.",
+      "consequences": [
+        "Compare una nuova figura ambigua collegata a Haven House.",
+        "Ethan riceve la conferma che i suoi ricordi potrebbero essere stati manipolati.",
+        "La fiducia nello Sconosciuto resta impossibile da stabilire."
+      ]
+    },
+    {
+      "session": 5,
+      "chapter": "Capitolo V – Haven House",
+      "title": "La fuga",
+      "description": "Ethan sceglie di fuggire con Cassian invece di seguire lo Sconosciuto. Durante la fuga sembra manifestarsi una presenza ancora più spaventosa, capace di intimorire lo stesso Sconosciuto. Ethan e Cassian scappano dalla finestra e raggiungono la strada.",
+      "consequences": [
+        "Ethan e Cassian sopravvivono alla casa di Cassian.",
+        "Haven House viene confermata come minaccia ancora attiva.",
+        "Una nuova presenza sconosciuta entra nell'ombra degli eventi.",
+        "Il prossimo passo sarà decidere dove nascondersi, chi contattare e come raggiungere la verità su Haven House."
+      ]
     }
   ],
   "master_rules": {
@@ -1094,10 +1409,13 @@
     "La Presenza deve rimanere ambigua finché non emergerà attraverso indizi.",
     "Il cognome Hale può creare risonanze con l'Ordine dell'Occhio del Sole, ma non va forzato senza sviluppo narrativo.",
     "Il ciondolo di Ethan è una chiave narrativa centrale e va collegato gradualmente al simbolo.",
-    "Nel prossimo capitolo non dare per scontato che Cassian sappia di Haven House: Ethan deve raccontarglielo.",
-    "Ethan NON ha nominato Cassian davanti ad Adrian, Miriam o Jonah.",
     "La data 17 ottobre 2001 è una pista importante e va trattata come elemento cronologico verificabile.",
     "Haven House deve restare una scoperta graduale: non rivelare subito la sua vera funzione.",
-    "Adrian è sotto sospetto a causa della nota, ma non confermare ancora se sia affidabile o meno."
+    "Adrian è sotto sospetto a causa della nota, ma non confermare ancora se sia affidabile o meno.",
+    "Nolan deve restare ambiguo: non confermare subito se sia vivo, morto, imprigionato o una manifestazione.",
+    "Lo Sconosciuto di Haven House non deve essere spiegato subito. Deve rimanere una figura ambigua tra custode, agente, sopravvissuto o antagonista.",
+    "La porta A-17 è una soglia narrativa importante e deve condurre a rivelazioni progressive, non immediate.",
+    "La presenza che spaventa lo Sconosciuto deve rimanere più minacciosa e meno comprensibile delle altre entità emerse finora.",
+    "Cassian ora sa che Haven House non è solo una pista storica, ma una minaccia presente."
   ]
 }
